@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capucine Piquart | Portfolio BTS SIO SLAM</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">CP</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#a-propos">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#competences">Compétences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projets">Projets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experiences">Expériences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tableau-competences">Tableau BTS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#veille">Veille</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="animate-title">Capucine Piquart</h1>
+                <h2 class="animate-subtitle">Étudiante BTS SIO Option SLAM</h2>
+                <p class="animate-text">Passionnée par le développement informatique (web ou applicatif), je transforme les idées en solutions
+                     digitales innovantes. À la recherche d'une alternance pour continuer à apprendre et contribuer à des 
+                     projets ambitieux.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Me contacter</a>
+                    <button class="btn btn-primary ms-3" data-bs-toggle="modal" data-bs-target="#cvModal">
+                        <i class="fas fa-file-pdf"></i> Voir mon CV
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- À propos -->
+    <section id="a-propos" class="about">
+        <div class="container">
+            <h2 class="section-title">À propos</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="about-card">
+                        <p><strong>🎓 Parcours :</strong> Baccalauréat Général avec spécialités Mathématiques et NSI 
+                            (Numérique et Sciences Informatiques). Actuellement en BTS SIO, spécialité SLAM à ESUPEC, Cholet.</p>
+                        <p><strong>🎯 Objectif :</strong> J'aimerais évoluer dans le domaine du développement informatique, 
+                            web ou applicatif, me spécialisée dans la création de solutions logicielles robustes et innovantes. Je
+                            souhaite allier technique et créativité pour répondre aux besoins des utilisateurs.</p>
+                        <p><strong>💡 Ce qui me motive :</strong> Résoudre des problèmes complexes, apprendre en continu, 
+                            répondre aux besoins des clients et contribuer à des projets qui ont un impact réel.</p>
+                        <div class="text-center mt-3">
+                            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#cvModal">
+                                <i class="fas fa-file-pdf"></i> Consulter mon CV
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compétences -->
+    <section id="competences" class="competences">
+        <div class="container">
+            <h2 class="section-title">Compétences</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="skill-card">
+                        <i class="fas fa-code"></i>
+                        <h3>Frontend</h3>
+                        <ul>
+                            <li>HTML5 / CSS3</li>
+                            <li>JavaScript (ES6+)</li>
+                            <li>Bootstrap / Tailwind</li>
+                            <li>React.js (en apprentissage)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="skill-card">
+                        <i class="fas fa-server"></i>
+                        <h3>Backend</h3>
+                        <ul>
+                            <li>PHP / Symfony</li>
+                            <li>Python / Flask</li>
+                            <li>Java (JEE)</li>
+                            <li>SQL (MySQL, PostgreSQL)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="skill-card">
+                        <i class="fas fa-tools"></i>
+                        <h3>Outils & Méthodes</h3>
+                        <ul>
+                            <li>Git / GitHub</li>
+                            <li>UML / Merise</li>
+                            <li>Docker (bases)</li>
+                            <li>VS Code / IntelliJ</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projets -->
+    <section id="projets" class="projets">
+        <div class="container">
+            <h2 class="section-title">Projets</h2>
+            
+            <!-- Projet 0  - SISR -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>💻 Projet AP1 (SISR) - Mise en place d'un système d'information</h3>
+                    <span class="project-date">2024</span>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p><strong>Contexte :</strong> Projet académique visant à créer un ...</p>
+                        <p><strong>Objectif :</strong> ...</p>
+                        <p><strong>Technologies :</strong> Cisco Packet Tracer</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <p><strong>Compétences développées :</strong> Gérer le patrimoine informatique, travailler en mode projet, mettre à disposition des utilisateurs un service informatique</p>
+                        <p><strong>Difficulté & solution :</strong> ...</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projet 1  - SLAM -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>💻 Projet AP1 (SLAM) - Service à la personne</h3>
+                    <span class="project-date">2024</span>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p><strong>Contexte :</strong> Projet académique visant à créer un ...</p>
+                        <p><strong>Objectif :</strong> ...</p>
+                        <p><strong>Technologies :</strong> Cisco Packet Tracer</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <p><strong>Compétences développées :</strong> Gérer le patrimoine informatique, travailler en mode projet, mettre à disposition des utilisateurs un service informatique</p>
+                        <p><strong>Difficulté & solution :</strong> ...</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projet 2 -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>🏇 Projet AP2 - Application de gestion (Course Hippique)</h3>
+                    <span class="project-date">2024</span>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p><strong>Contexte :</strong> Projet académique visant à créer un outil de gestion pour une société organisatrice de courses hippiques.</p>
+                        <p><strong>Objectif :</strong> Développer une application complète avec CRUD pour gérer les chevaux, les courses et les parieurs.</p>
+                        <p><strong>Technologies :</strong> PHP, MySQL, HTML/CSS, JavaScript</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <p><strong>Compétences développées :</strong> Modélisation de bases de données, logique métier, sécurisation des accès.</p>
+                        <p><strong>Difficulté & solution :</strong> Gestion des mises à jour concurrentes - implémentation d'un système de verrouillage optimiste.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projet Stage BTS1 -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>🌐 Stage 1 - Site vitrine Axéolys</h3>
+                    <span class="project-date">2025</span>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p><strong>Contexte :</strong> Stage en entreprise au Groupe Duret Immobilier, groupement d'agence immobilière.</p>
+                        <p><strong>Objectif :</strong> Créer un site vitrine responsive avec formulaire de contact et contenu dynamique pour une
+                             ESN alors en création (Axéolys).</p>
+                        <p><strong>Technologies :</strong> Framework Vue.js3, HTML5, CSS3, JavaScript</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <p><strong>Compétences développées :</strong> Relation client, respect des délais, responsive design.</p>
+                        <p><strong>Difficulté & solution :</strong> Apprentissage d'un nouveau framework en autonomie - utilisation de ressources
+                             en ligne et documentation. M'adapter à la demande du client.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projet 3 -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>✈️ Projet AP3 - MUDRY AVIATION</h3>
+                    <span class="project-date">2025</span>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p><strong>Contexte :</strong> Application métier pour une entreprise de services aéronautiques.</p>
+                        <p><strong>Objectif :</strong> Implémenter un CRUD complet pour la gestion des employés et des vols.</p>
+                        <p><strong>Technologies :</strong> Symfony, Doctrine, Twig, Bootstrap</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <p><strong>Compétences développées :</strong> Architecture MVC, gestion des relations entre entités.</p>
+                        <p><strong>Difficulté & solution :</strong> Complexité des relations entre tables - modélisation soignée avec UML avant développement.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projet Stage BTS2 -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>🐾 Stage 2 - MyVetApps2</h3>
+                    <span class="project-date">2026</span>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p><strong>Contexte :</strong> Refonte d'un logiciel métier pour cabinets vétérinaires.</p>
+                        <p><strong>Objectif :</strong> Implémenter CRUD espèces/races et agenda dynamique.</p>
+                        <p><strong>Technologies :</strong> Java, JavaFX, MySQL, Git (travail en équipe)</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <p><strong>Compétences développées :</strong> Travail collaboratif, gestion de versions, conception d'interfaces.</p>
+                        <p><strong>Difficulté & solution :</strong> Synchronisation agenda - utilisation d'observateurs pour mise à jour temps réel.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projet 4 -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>💼 Projet AP4 - Trouve Ton Job</h3>
+                    <span class="project-date">2026</span>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p><strong>Contexte :</strong> Plateforme de recrutement pour mettre en relation candidats et recruteurs.</p>
+                        <p><strong>Objectif :</strong> CRUD offres d'emploi, système d'acceptation/refus de candidatures.</p>
+                        <p><strong>Technologies :</strong> Symfony, MySQL, JavaScript, API REST</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <p><strong>Compétences développées :</strong> Gestion des droits utilisateurs, sécurité (rôles).</p>
+                        <p><strong>Difficulté & solution :</strong> Workflow de validation - implémentation d'un système de statuts avec notifications automatiques.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projet Personnel -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>🚴 Projet personnel - Refonte du site club de vélo</h3>
+                    <span class="project-date">2025-2026</span>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p><strong>Contexte :</strong> Refonte complète du site web d'un club cycliste local.</p>
+                        <p><strong>Objectif :</strong> Organisation en architecture MVC, séparation logique/vue/données.</p>
+                        <p><strong>Technologies :</strong> PHP MVC maison, MySQL, TailwindCSS</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <p><strong>Compétences développées :</strong> Architecture logicielle, réutilisabilité du code.</p>
+                        <p><strong>Difficulté & solution :</strong> Router maison - création d'un système de routage personnalisé inspiré des frameworks modernes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expériences professionnelles -->
+    <section id="experiences" class="experiences">
+        <div class="container">
+            <h2 class="section-title">Expériences professionnelles</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="exp-card">
+                        <h3>Stage Développeuse Web</h3>
+                        <p class="exp-company">Groupe Duret Immobilier - Montaigu-Vendée (85)</p>
+                        <p class="exp-date">Mai - Juin 2025 (6 semaines)</p>
+                        <ul>
+                            <li>Développement d'un site vitrine responsive pour un client ESN (Axéolys)</li>
+                            <li>Intégration d'un formulaire de contact avec validation JavaScript</li>
+                            <li>Participation aux points avec le client pour recueillir les besoins</li>
+                            <li>Rédaction de documentation technique</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="exp-card">
+                        <h3>Stage Développeuse Logiciel</h3>
+                        <p class="exp-company">Coveto - Montaigu-Vendée (85)</p>
+                        <p class="exp-date">Janvier - Février 2026 (6 semaines)</p>
+                        <ul>
+                            <li>Participation à la refonte d'un logiciel métier pour des vétérinaires.</li>
+                            <li>Développement en Symfony 7 et PHP 8</li>
+                            <li>Développement d'un agenda dynamique</li>
+                            <li>Travail en équipe avec utilisation de Git pour le versioning</li>
+                            <li>Tests unitaires et correction de bugs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tableau de compétences BTS SIO -->
+    <section id="tableau-competences" class="tableau-competences">
+        <div class="container">
+            <h2 class="section-title">Tableau de compétences BTS SIO</h2>
+            <div class="table-responsive">
+                <table class="table table-bordered skill-table">
+                    <thead>
+                        <tr>
+                            <th>Compétence</th>
+                            <th>Projet associé</th>
+                            <th>Niveau acquis</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Gérer le patrimoine informatique</td>
+                            <td>AP2 (Course Hippique)</td>
+                            <td><span class="badge">Avancé</span></td>
+                        </tr>
+                        <tr>
+                            <td>Répondre aux incidents et demandes d'assistance</td>
+                            <td>Stage MyVetApps2</td>
+                            <td><span class="badge">Intermédiaire</span></td>
+                        </tr>
+                        <tr>
+                            <td>Développer la présence en ligne de l'organisation</td>
+                            <td>Stage Axéolys</td>
+                            <td><span class="badge">Avancé</span></td>
+                        </tr>
+                        <tr>
+                            <td>Travailler en mode projet</td>
+                            <td>AP4 Trouve Ton Job</td>
+                            <td><span class="badge">Avancé</span></td>
+                        </tr>
+                        <tr>
+                            <td>Mettre à disposition des utilisateurs un service informatique</td>
+                            <td>Projet club de vélo</td>
+                            <td><span class="badge">Intermédiaire</span></td>
+                        </tr>
+                        <tr>
+                            <td>Organiser son développement professionnel</td>
+                            <td>Veille technologique + Tous projets</td>
+                            <td><span class="badge">Avancé</span></td>
+                        </tr>
+                        <tr>
+                            <td>Concevoir et développer une application</td>
+                            <td>AP3 MUDRY AVIATION</td>
+                            <td><span class="badge">Avancé</span></td>
+                        </tr>
+                        <tr>
+                            <td>Maintenir en condition opérationnelle une application</td>
+                            <td>Projet club de vélo (refonte)</td>
+                            <td><span class="badge">Intermédiaire</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Veille technologique -->
+    <section id="veille" class="veille">
+        <div class="container">
+            <h2 class="section-title">Veille technologique</h2>
+            <div class="veille-content">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="veille-card">
+                            <i class="fas fa-rss"></i>
+                            <h3>Sujets suivis</h3>
+                            <ul>
+                                <li>Nouveautés Symfony 6/7</li>
+                                <li>Évolution de JavaScript (ES2024)</li>
+                                <li>IA et développement assisté</li>
+                                <li>Sécurité des applications web</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="veille-card">
+                            <i class="fas fa-newspaper"></i>
+                            <h3>Sources</h3>
+                            <ul>
+                                <li>GitHub Blog</li>
+                                <li>Dev.to / Medium</li>
+                                <li>Laravel News (veille PHP)</li>
+                                <li>YouTube (Grafikart, SymfonyCasts)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="contact-cards">
+                        <a href="mailto:capucine.piquart@esupec.fr" class="contact-card">
+                            <i class="fas fa-envelope"></i>
+                            <span>capucine.piquart@esupec.fr</span>
+                        </a>
+                        <a href="https://github.com/capucinepiquart" target="_blank" class="contact-card">
+                            <i class="fab fa-github"></i>
+                            <span>github.com/capucinepiquart</span>
+                        </a>
+                        <a href="https://linkedin.com/in/capucine-piquart" target="_blank" class="contact-card">
+                            <i class="fab fa-linkedin"></i>
+                            <span>linkedin.com/in/capucine-piquart</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Capucine Piquart - Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <!-- Modale CV -->
+    <div class="modal fade" id="cvModal" tabindex="-1">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        <i class="fas fa-file-pdf"></i> CV — Capucine Piquart
+                    </h5>
+                    <div class="ms-auto d-flex gap-2 align-items-center">
+                        <a href="cv.pdf" download class="btn-cv-download">
+                            <i class="fas fa-download"></i> Télécharger
+                        </a>
+                        <button type="button" class="btn-close ms-2" data-bs-dismiss="modal"></button>
+                    </div>
+                </div>
+                <div class="modal-body p-0">
+                    <iframe src="cv.pdf" width="100%" height="700px" style="border:none;"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
