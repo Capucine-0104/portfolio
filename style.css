@@ -3,7 +3,7 @@
    ============================================ */
 :root {
     --primary: #5a25eb;
-    --primary-dark: #511eaf;
+    --primary-dark: #4a1db3;
     --secondary: #0f172a;
     --text: #1f2937;
     --text-light: #6b7280;
@@ -155,22 +155,20 @@ body {
 }
 
 .btn-outline-primary {
-    background: var(--white);
-    color: var(--primary);
-    border: 2px solid var(--primary);
+    background: transparent;
+    color: var(--white);
+    border: 2px solid var(--white);
     padding: 12px 32px;
     font-weight: 600;
     border-radius: 50px;
     transition: var(--transition);
-    animation: fadeInUp 0.8s ease 0.6s both;
 }
 
 .btn-outline-primary:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.2);
-    background: var(--primary-dark);
-    color: var(--white);
-    border: 2px solid var(--primary-dark);
+    background: var(--white);
+    color: var(--primary);
+    border-color: var(--white);
 }
 
 /* ============================================
@@ -228,6 +226,10 @@ section {
 /* ============================================
    COMPÉTENCES
    ============================================ */
+.competences {
+    background: var(--white);
+}
+
 .skill-card {
     background: var(--white);
     padding: 2rem;
@@ -273,54 +275,178 @@ section {
 }
 
 /* ============================================
-   PROJETS
+   PROJETS - VERSION COMPACTE AVEC CARTES
    ============================================ */
 .projets {
     background: var(--bg-light);
 }
 
-.project-card {
+.project-card-compact {
     background: var(--white);
-    border-radius: 15px;
-    padding: 1.5rem;
-    margin-bottom: 2rem;
+    border-radius: 20px;
+    padding: 1.8rem;
+    text-align: center;
     box-shadow: var(--shadow);
     transition: var(--transition);
+    height: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
-.project-card:hover {
-    transform: translateX(10px);
-    box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.15);
+.project-card-compact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary), var(--primary-dark));
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
 }
 
-.project-header {
+.project-card-compact:hover::before {
+    transform: scaleX(1);
+}
+
+.project-card-compact:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.2);
+}
+
+.project-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    border-radius: 50%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin-bottom: 1rem;
-    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto 1.2rem;
 }
 
-.project-header h3 {
-    color: var(--primary);
-    font-size: 1.3rem;
-    margin: 0;
-}
-
-.project-date {
-    background: var(--primary);
+.project-icon i {
+    font-size: 2rem;
     color: var(--white);
-    padding: 5px 12px;
-    border-radius: 20px;
-    font-size: 0.85rem;
 }
 
-.project-card p {
+.project-card-compact h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--secondary);
+}
+
+.project-tech {
+    font-size: 0.85rem;
+    color: var(--primary);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.project-short {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.btn-project {
+    background: transparent;
+    border: none;
+    color: var(--primary);
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    font-size: 0.9rem;
+}
+
+.btn-project i {
+    transition: transform 0.2s ease;
+}
+
+.btn-project:hover {
+    background: rgba(90, 37, 235, 0.1);
+}
+
+.btn-project:hover i {
+    transform: translateX(5px);
+}
+
+/* ============================================
+   MODALES - STYLES AMÉLIORÉS
+   ============================================ */
+.modal-content {
+    border-radius: 20px;
+    border: none;
+    overflow: hidden;
+}
+
+.modal-header {
+    background: linear-gradient(135deg, var(--secondary), var(--primary-dark));
+    color: var(--white);
+    border: none;
+    padding: 1.2rem 1.5rem;
+}
+
+.modal-header .modal-title {
+    color: var(--white);
+    font-weight: 600;
+}
+
+.modal-header .btn-close {
+    background-color: var(--white);
+    opacity: 0.8;
+}
+
+.modal-header .btn-close:hover {
+    opacity: 1;
+}
+
+.modal-body {
+    padding: 2rem;
+}
+
+.modal-body h6 {
+    color: var(--primary);
+    font-weight: 700;
+    margin-top: 1rem;
     margin-bottom: 0.8rem;
 }
 
-.project-card strong {
-    color: var(--secondary);
+.modal-body h6:first-child {
+    margin-top: 0;
+}
+
+.modal-body ul {
+    padding-left: 1.2rem;
+}
+
+.modal-body ul li {
+    margin-bottom: 0.5rem;
+}
+
+.modal-footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    background: var(--bg-light);
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.tech-tags span {
+    background: var(--bg-light);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    color: var(--primary);
+    font-weight: 500;
 }
 
 /* ============================================
@@ -379,7 +505,7 @@ section {
    TABLEAU COMPÉTENCES
    ============================================ */
 .tableau-competences {
-    background: var(--bg-light);
+    background: var(--white);
 }
 
 .skill-table {
@@ -410,6 +536,10 @@ section {
 /* ============================================
    VEILLE
    ============================================ */
+.veille {
+    background: var(--bg-light);
+}
+
 .veille-content {
     max-width: 800px;
     margin: 0 auto;
@@ -501,48 +631,8 @@ section {
 }
 
 /* ============================================
-   BOUTONS CV
+   BOUTON CV
    ============================================ */
-.btn-cv {
-    background: var(--primary);
-    color: var(--white);
-    border: none;
-    padding: 12px 32px;
-    font-weight: 600;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: var(--transition);
-    font-size: 1rem;
-}
-
-.btn-cv:hover {
-    background: var(--primary-dark);
-    transform: translateY(-3px);
-    box-shadow: var(--shadow);
-}
-
-.btn-cv i {
-    margin-right: 0.5rem;
-}
-
-.btn-outline-cv {
-    background: transparent;
-    color: var(--white);
-    border: 2px solid var(--white);
-    padding: 10px 28px;
-    font-weight: 600;
-    border-radius: 50px;
-    text-decoration: none;
-    transition: var(--transition);
-    display: inline-block;
-    animation: fadeInUp 0.8s ease 0.6s both;
-}
-
-.btn-outline-cv:hover {
-    background: var(--white);
-    color: var(--primary);
-}
-
 .btn-cv-download {
     background: var(--primary);
     color: var(--white);
@@ -555,21 +645,8 @@ section {
 }
 
 .btn-cv-download:hover {
-    background: var(--primary-dark);
-    color: var(--white);
-}
-
-/* ============================================
-   MODALE CV
-   ============================================ */
-.modal-header {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 1rem 1.5rem;
-}
-
-.modal-title {
+    background: var(--white);
     color: var(--primary);
-    font-weight: 700;
 }
 
 /* ============================================
@@ -599,6 +676,15 @@ footer {
 /* ============================================
    RESPONSIVE
    ============================================ */
+@media (max-width: 992px) {
+    .navbar-nav {
+        background: var(--white);
+        padding: 1rem;
+        border-radius: 15px;
+        margin-top: 1rem;
+    }
+}
+
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 2.5rem;
@@ -610,12 +696,6 @@ footer {
     
     .section-title {
         font-size: 2rem;
-    }
-    
-    .project-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.5rem;
     }
     
     .contact-cards {
@@ -632,9 +712,21 @@ footer {
         padding: 50px 0;
     }
 
-    .btn-outline-cv {
-        margin-top: 1rem;
-        margin-left: 0 !important;
+    .modal-body {
+        padding: 1.2rem;
+    }
+    
+    .project-card-compact {
+        padding: 1.2rem;
+    }
+    
+    .project-icon {
+        width: 55px;
+        height: 55px;
+    }
+    
+    .project-icon i {
+        font-size: 1.5rem;
     }
 }
 
@@ -643,7 +735,7 @@ footer {
         font-size: 2rem;
     }
     
-    .skill-card, .exp-card, .project-card {
+    .skill-card, .exp-card, .project-card-compact {
         padding: 1rem;
     }
 }
