@@ -84,22 +84,18 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// ============================================
+// ==================================
 // GESTION DU SCROLL POUR LA NAVBAR
-// ============================================
-let lastScroll = 0;
+// ==================================
 window.addEventListener('scroll', function() {
     const navbar = document.querySelector('.navbar');
     const currentScroll = window.pageYOffset;
     
     if (navbar) {
-        if (currentScroll > 100) {
-            navbar.style.padding = '0.5rem 0';
-            navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.1)';
+        if (currentScroll > 50) {
+            navbar.classList.add('navbar-scrolled');
         } else {
-            navbar.style.padding = '1rem 0';
-            navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+            navbar.classList.remove('navbar-scrolled');
         }
     }
-    lastScroll = currentScroll;
 });

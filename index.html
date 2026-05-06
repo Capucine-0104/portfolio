@@ -13,7 +13,7 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-compact">
         <div class="container">
             <a class="navbar-brand" href="#">CP</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -313,34 +313,116 @@
     <section id="veille" class="veille">
         <div class="container">
             <h2 class="section-title">Veille technologique</h2>
-            <div class="veille-content">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="veille-card">
-                            <i class="fas fa-rss"></i>
-                            <h3>Sujets suivis</h3>
-                            <ul>
-                                <li>Nouveautés Symfony 6/7</li>
-                                <li>Évolution de JavaScript (ES2024)</li>
-                                <li>IA et développement assisté</li>
-                                <li>Sécurité des applications web</li>
-                            </ul>
+ 
+            <!-- Thème & Problématique -->
+            <div class="row mb-4">
+                <div class="col-lg-10 mx-auto">
+                    <div class="veille-intro-card">
+                        <div class="veille-theme-badge">
+                            <i class="fas fa-robot"></i> Thème de veille
                         </div>
+                        <h3>L'intelligence artificielle dans le développement logiciel</h3>
+                        <p class="veille-problematique">
+                            <strong>Problématique :</strong> Dans quelle mesure l'intelligence artificielle transforme-t-elle le métier de développeur, et quelles en sont les opportunités et les limites ?
+                        </p>
                     </div>
-                    <div class="col-md-6">
-                        <div class="veille-card">
-                            <i class="fas fa-newspaper"></i>
-                            <h3>Sources</h3>
-                            <ul>
-                                <li>GitHub Blog</li>
-                                <li>Dev.to / Medium</li>
-                                <li>Laravel News / Symfony Blog</li>
-                                <li>YouTube (Grafikart, SymfonyCasts)</li>
-                            </ul>
+                </div>
+            </div>
+ 
+            <!-- 4 sous-thèmes -->
+            <div class="row g-4 mb-4">
+ 
+                <!-- Sous-thème 1 -->
+                <div class="col-md-6">
+                    <div class="veille-card veille-card-numbered">
+                        <div class="veille-number">01</div>
+                        <i class="fas fa-code"></i>
+                        <h3>Les outils d'assistance au code</h3>
+                        <!--<p>Des outils comme <strong>GitHub Copilot</strong> ou <strong>Cursor</strong> s'intègrent directement dans l'éditeur et suggèrent du code en temps réel. J'utilise GitHub Copilot et ChatGPT / Claude au quotidien dans mes projets, ce qui m'a permis d'observer concrètement leur impact sur la productivité et l'apprentissage.</p>
+                        <ul>
+                            <li>GitHub Copilot (Microsoft / OpenAI)</li>
+                            <li>Cursor — éditeur IA basé sur VS Code</li>
+                            <li>Claude & ChatGPT — assistance contextuelle</li>
+                        </ul>-->
+                    </div>
+                </div>
+ 
+                <!-- Sous-thème 2 -->
+                <div class="col-md-6">
+                    <div class="veille-card veille-card-numbered">
+                        <div class="veille-number">02</div>
+                        <i class="fas fa-wand-magic-sparkles"></i>
+                        <h3>Le Vibe Coding</h3>
+                        <!--<p>Concept introduit par <strong>Andrej Karpathy</strong> (cofondateur d'OpenAI) en février 2025, le vibe coding désigne le fait de générer du code entièrement via des descriptions en langage naturel, sans écrire soi-même la moindre ligne. En mars 2025, 25 % des startups du programme Y Combinator avaient des bases de code générées à 95 % par IA.</p>
+                        <ul>
+                            <li>Prototypage ultra-rapide d'applications</li>
+                            <li>Outils : Replit Agent, Lovable, Firebase Studio</li>
+                            <li>Risque : code non maîtrisé, bugs difficiles à corriger</li>
+                        </ul>-->
+                    </div>
+                </div>
+ 
+                <!-- Sous-thème 3 -->
+                <div class="col-md-6">
+                    <div class="veille-card veille-card-numbered">
+                        <div class="veille-number">03</div>
+                        <i class="fas fa-user-gear"></i>
+                        <h3>L'évolution du rôle de développeur</h3>
+                        <!---<p>L'IA ne remplace pas le développeur, elle fait évoluer son rôle. Le développeur devient davantage un <strong>architecte et superviseur</strong> qui valide, teste et oriente le code généré. Les compétences en communication avec l'IA (prompt engineering) deviennent aussi importantes que la maîtrise des langages.</p>
+                        <ul>
+                            <li>De codeur à orchestrateur d'IA</li>
+                            <li>Montée en importance du prompt engineering</li>
+                            <li>L'architecture et la logique métier restent humaines</li>
+                        </ul>-->
+                    </div>
+                </div>
+ 
+                <!-- Sous-thème 4 -->
+                <div class="col-md-6">
+                    <div class="veille-card veille-card-numbered">
+                        <div class="veille-number">04</div>
+                        <i class="fas fa-triangle-exclamation"></i>
+                        <h3>Limites et risques</h3>
+                        <!--<p>L'adoption massive de l'IA dans le développement soulève des questions sérieuses. Selon le rapport Veracode 2025, <strong>45 % du code généré par IA</strong> introduit des vulnérabilités de sécurité connues (failles OWASP). Une supervision humaine reste indispensable, surtout en contexte professionnel.</p>
+                        <ul>
+                            <li>Vulnérabilités de sécurité non détectées</li>
+                            <li>Code difficile à maintenir à grande échelle</li>
+                            <li>Dépendance excessive aux outils IA</li>
+                        </ul>-->
+                    </div>
+                </div>
+            </div>
+ 
+            <!-- Sources -->
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="veille-card veille-sources">
+                        <i class="fas fa-newspaper"></i>
+                        <h3>Sources utilisées</h3>
+                        <div class="row mt-3">
+                            <div class="col-md-4">
+                                <p><strong>📰 Articles & blogs</strong></p>
+                                <ul>
+                                    <li>...</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <p><strong>🎥 Vidéos & podcasts</strong></p>
+                                <ul>
+                                    <li>...</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <p><strong>🔬 Rapports & études</strong></p>
+                                <ul>
+                                    <li>...</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+ 
         </div>
     </section>
 
