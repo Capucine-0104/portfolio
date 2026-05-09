@@ -4,15 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capucine Piquart | Portfolio BTS SIO SLAM</title>
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
+
+    <!-- ===== NAVIGATION ===== -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-compact">
         <div class="container">
             <a class="navbar-brand" href="#">CP</a>
@@ -34,15 +32,15 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- ===== HERO ===== -->
     <section id="accueil" class="hero">
         <div class="container">
             <div class="hero-content">
                 <h1 class="animate-title">Capucine Piquart</h1>
                 <h2 class="animate-subtitle">Étudiante BTS SIO Option SLAM</h2>
-                <p class="animate-text">Passionnée par le développement informatique (web ou applicatif), je suis étudiante dans ce domaine. Je créé des solutions logicielles innovantes au service des clients.</p>
+                <p class="animate-text">Passionnée par le développement informatique (web ou applicatif), je créée des solutions logicielles innovantes au service des clients.</p>
                 <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Me contacter</a>
+                    <a href="#contact" class="btn btn-outline-primary ms-3">Me contacter</a>
                     <button class="btn btn-outline-primary ms-3" data-bs-toggle="modal" data-bs-target="#cvModal">
                         <i class="fas fa-file-pdf"></i> Voir mon CV
                     </button>
@@ -51,18 +49,18 @@
         </div>
     </section>
 
-    <!-- À propos -->
+    <!-- ===== À PROPOS ===== -->
     <section id="a-propos" class="about">
         <div class="container">
             <h2 class="section-title">À propos</h2>
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <div class="about-card">
-                        <p><strong>🎓 Parcours :</strong> Baccalauréat Général avec spécialités Mathématiques et NSI (Numérique et Sciences Informatiques). Actuellement en deuxième année de BTS SIO, spécialité SLAM à ESUPEC, Cholet.</p>
-                        <p><strong>🎯 Objectif :</strong> J'aimerais évoluer dans le domaine du développement informatique, web ou applicatif, me spécialiser dans la création de solutions logicielles robustes et innovantes. Je souhaite allier technique et créativité pour répondre aux besoins des utilisateurs.</p>
+                        <p><strong>🎓 Parcours :</strong> Baccalauréat Général avec spécialités Mathématiques et NSI. Actuellement en deuxième année de BTS SIO, spécialité SLAM à ESUPEC, Cholet.</p>
+                        <p><strong>🎯 Objectif :</strong> Évoluer dans le domaine du développement informatique, web ou applicatif, en créant des solutions logicielles robustes et innovantes. Allier technique et créativité pour répondre aux besoins des utilisateurs.</p>
                         <p><strong>💡 Ce qui me motive :</strong> Résoudre des problèmes complexes, apprendre en continu, répondre aux besoins des clients et contribuer à des projets qui ont un impact réel.</p>
                         <div class="text-center mt-3">
-                            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#cvModal">
+                            <button class="btn btn-outline-primary-about" data-bs-toggle="modal" data-bs-target="#cvModal">
                                 <i class="fas fa-file-pdf"></i> Consulter mon CV
                             </button>
                         </div>
@@ -72,7 +70,7 @@
         </div>
     </section>
 
-    <!-- Compétences -->
+    <!-- ===== COMPÉTENCES ===== -->
     <section id="competences" class="competences">
         <div class="container">
             <h2 class="section-title">Compétences techniques</h2>
@@ -94,7 +92,7 @@
                         <i class="fas fa-server"></i>
                         <h3>Backend</h3>
                         <ul>
-                            <li>PHP / Symfony</li>
+                            <li>PHP 8 / Symfony 7</li>
                             <li>Python</li>
                             <li>Java</li>
                             <li>SQL (MySQL, NoSQL)</li>
@@ -109,7 +107,7 @@
                             <li>Git / GitHub</li>
                             <li>UML / Merise</li>
                             <li>Docker (en apprentissage)</li>
-                            <li>VS Code</li>
+                            <li>VS Code / Figma</li>
                         </ul>
                     </div>
                 </div>
@@ -117,171 +115,154 @@
         </div>
     </section>
 
-    <!-- Projets - Version carte avec boutons "En savoir plus" -->
+    <!-- ===== PROJETS ===== -->
     <section id="projets" class="projets">
         <div class="container">
-            <h2 class="section-title">Mes Projets</h2>
-            <div class="row g-4">
-                <!-- Projet AP1 SISR -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="project-card-compact">
-                        <div class="project-icon">
-                            <i class="fas fa-network-wired"></i>
-                        </div>
-                        <h3>AP1 - Système d'information</h3>
-                        <p class="project-tech">Cisco Packet Tracer</p>
-                        <p class="project-short">Mise en place d'un système d'information complet...</p>
-                        <button class="btn-project" data-bs-toggle="modal" data-bs-target="#modalAP1SISR">
-                            En savoir plus <i class="fas fa-arrow-right"></i>
-                        </button>
+            <h2 class="section-title">Mes Projets Académiques</h2>
+
+            <!-- BLOC 1 : Atelier Professionels (APs) -->
+            <div class="projet-bloc">
+                <div class="projet-bloc-header">
+                    <div class="projet-bloc-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div>
+                        <h3 class="projet-bloc-title">Atelier Professionels (AP)</h3>
+                        <p class="projet-bloc-desc">Projets réalisés en cours et en groupes dans le cadre du BTS SIO — développement d'applications complètes sur des cas métiers réels.</p>
                     </div>
                 </div>
-
-                <!-- Projet AP1 SLAM -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="project-card-compact">
-                        <div class="project-icon">
-                            <i class="fas fa-hands-helping"></i>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="project-card-compact">
+                            <div class="project-icon"><i class="fas fa-network-wired"></i></div>
+                            <h3>AP1 — Système d'information</h3>
+                            <p class="project-tech">Cisco Packet Tracer</p>
+                            <p class="project-short">Infrastructure réseau simulée pour une entreprise.</p>
+                            <button class="btn-project" data-bs-toggle="modal" data-bs-target="#modalAP1SISR">
+                                En savoir plus <i class="fas fa-arrow-right"></i>
+                            </button>
                         </div>
-                        <h3>AP1 - Service à la personne</h3>
-                        <p class="project-tech">PHP / MySQL</p>
-                        <p class="project-short">Application de mise en relation pour services à domicile...</p>
-                        <button class="btn-project" data-bs-toggle="modal" data-bs-target="#modalAP1SLAM">
-                            En savoir plus <i class="fas fa-arrow-right"></i>
-                        </button>
                     </div>
-                </div>
-
-                <!-- Projet AP2 Course Hippique -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="project-card-compact">
-                        <div class="project-icon">
-                            <i class="fas fa-horse"></i>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="project-card-compact">
+                            <div class="project-icon"><i class="fas fa-hands-helping"></i></div>
+                            <h3>AP1 — Service à la personne</h3>
+                            <p class="project-tech">PHP / MySQL</p>
+                            <p class="project-short">Mise en relation de services à domicile.</p>
+                            <button class="btn-project" data-bs-toggle="modal" data-bs-target="#modalAP1SLAM">
+                                En savoir plus <i class="fas fa-arrow-right"></i>
+                            </button>
                         </div>
-                        <h3>AP2 - Course Hippique</h3>
-                        <p class="project-tech">PHP / MySQL / JS</p>
-                        <p class="project-short">Application de gestion complète avec CRUD...</p>
-                        <button class="btn-project" data-bs-toggle="modal" data-bs-target="#modalAP2">
-                            En savoir plus <i class="fas fa-arrow-right"></i>
-                        </button>
                     </div>
-                </div>
-
-                <!-- Stage 1 - Axéolys -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="project-card-compact">
-                        <div class="project-icon">
-                            <i class="fas fa-building"></i>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="project-card-compact">
+                            <div class="project-icon"><i class="fas fa-horse"></i></div>
+                            <h3>AP2 — Course Hippique</h3>
+                            <p class="project-tech">PHP / MySQL / JS</p>
+                            <p class="project-short">Application de gestion complète avec CRUD.</p>
+                            <button class="btn-project" data-bs-toggle="modal" data-bs-target="#modalAP2">
+                                En savoir plus <i class="fas fa-arrow-right"></i>
+                            </button>
                         </div>
-                        <h3>Stage 1 - Axéolys</h3>
-                        <p class="project-tech">Vue.js 3 / HTML/CSS</p>
-                        <p class="project-short">Site vitrine responsive pour une ESN en création...</p>
-                        <button class="btn-project" data-bs-toggle="modal" data-bs-target="#modalStage1">
-                            En savoir plus <i class="fas fa-arrow-right"></i>
-                        </button>
                     </div>
-                </div>
-
-                <!-- Projet AP3 MUDRY AVIATION -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="project-card-compact">
-                        <div class="project-icon">
-                            <i class="fas fa-plane"></i>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="project-card-compact">
+                            <div class="project-icon"><i class="fas fa-plane"></i></div>
+                            <h3>AP3 — MUDRY Aviation</h3>
+                            <p class="project-tech">Symfony / Doctrine</p>
+                            <p class="project-short">Application métier aéronautique.</p>
+                            <button class="btn-project" data-bs-toggle="modal" data-bs-target="#modalAP3">
+                                En savoir plus <i class="fas fa-arrow-right"></i>
+                            </button>
                         </div>
-                        <h3>AP3 - MUDRY AVIATION</h3>
-                        <p class="project-tech">Symfony / Doctrine</p>
-                        <p class="project-short">Application métier pour l'aéronautique...</p>
-                        <button class="btn-project" data-bs-toggle="modal" data-bs-target="#modalAP3">
-                            En savoir plus <i class="fas fa-arrow-right"></i>
-                        </button>
                     </div>
-                </div>
-
-                <!-- Stage 2 - MyVetApps2 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="project-card-compact">
-                        <div class="project-icon">
-                            <i class="fas fa-paw"></i>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="project-card-compact">
+                            <div class="project-icon"><i class="fas fa-briefcase"></i></div>
+                            <h3>AP4 — Trouve Ton Job</h3>
+                            <p class="project-tech">Symfony / API REST</p>
+                            <p class="project-short">Plateforme de recrutement candidats / recruteurs.</p>
+                            <button class="btn-project" data-bs-toggle="modal" data-bs-target="#modalAP4">
+                                En savoir plus <i class="fas fa-arrow-right"></i>
+                            </button>
                         </div>
-                        <h3>Stage 2 - MyVetApps2</h3>
-                        <p class="project-tech">Symfony 7 / PHP 8</p>
-                        <p class="project-short">Refonte logiciel pour cabinets vétérinaires...</p>
-                        <button class="btn-project" data-bs-toggle="modal" data-bs-target="#modalStage2">
-                            En savoir plus <i class="fas fa-arrow-right"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Projet AP4 Trouve Ton Job -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="project-card-compact">
-                        <div class="project-icon">
-                            <i class="fas fa-briefcase"></i>
-                        </div>
-                        <h3>AP4 - Trouve Ton Job</h3>
-                        <p class="project-tech">Symfony / API REST</p>
-                        <p class="project-short">Plateforme de recrutement innovante...</p>
-                        <button class="btn-project" data-bs-toggle="modal" data-bs-target="#modalAP4">
-                            En savoir plus <i class="fas fa-arrow-right"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Projet Personnel - Club de vélo -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="project-card-compact">
-                        <div class="project-icon">
-                            <i class="fas fa-bicycle"></i>
-                        </div>
-                        <h3>Club de Vélo</h3>
-                        <p class="project-tech">PHP MVC / CSS / JS</p>
-                        <p class="project-short">Refonte complète site club cycliste...</p>
-                        <button class="btn-project" data-bs-toggle="modal" data-bs-target="#modalPersonnel">
-                            En savoir plus <i class="fas fa-arrow-right"></i>
-                        </button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Expériences professionnelles -->
-    <section id="experiences" class="experiences">
+    <section id="projets" class="projets">
         <div class="container">
-            <h2 class="section-title">Expériences professionnelles</h2>
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="exp-card">
-                        <h3>Stage Développeuse Web</h3>
-                        <p class="exp-company">Groupe Duret Immobilier - Montaigu-Vendée (85)</p>
-                        <p class="exp-date">Mai - Juin 2025 (6 semaines)</p>
-                        <ul>
-                            <li>Développement d'un site vitrine responsive pour une ESN (Axéolys)</li>
-                            <li>Intégration d'un formulaire de contact avec validation JavaScript</li>
-                            <li>Participation aux points avec le client pour recueillir les besoins</li>
-                            <li>Rédaction de documentation technique</li>
-                        </ul>
+            <h2 class="section-title">Mes Projets Professionnels</h2>
+            <!-- BLOC 2 : Stages -->
+            <div class="projet-bloc projet-bloc-stage">
+                <div class="projet-bloc-header">
+                    <div class="projet-bloc-icon projet-bloc-icon-stage"><i class="fas fa-building"></i></div>
+                    <div>
+                        <h3 class="projet-bloc-title">Stages en entreprise</h3>
+                        <p class="projet-bloc-desc">Deux stages de 6 semaines en milieu professionnel — développement sur des projets réels avec des équipes techniques.</p>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="exp-card">
-                        <h3>Stage Développeuse Logiciel</h3>
-                        <p class="exp-company">Coveto - Montaigu-Vendée (85)</p>
-                        <p class="exp-date">Janvier - Février 2026 (6 semaines)</p>
-                        <ul>
-                            <li>Participation à la refonte d'un logiciel métier pour des vétérinaires</li>
-                            <li>Développement en Symfony 7 et PHP 8</li>
-                            <li>Développement d'un agenda dynamique</li>
-                            <li>Travail en équipe avec utilisation de Git pour le versioning</li>
-                            <li>Tests unitaires et correction de bugs</li>
-                        </ul>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="project-card-compact project-card-stage">
+                            <div class="stage-label"><i class="fas fa-calendar-alt"></i> Mai – Juin 2025</div>
+                            <div class="project-icon project-icon-stage"><i class="fas fa-globe"></i></div>
+                            <h3>Stage 1 — Site vitrine Axéolys</h3>
+                            <p class="project-tech">Vue.js 3 / HTML / CSS</p>
+                            <p class="project-short">Création d'un site vitrine responsive pour une ESN en création — Groupe Duret Immobilier.</p>
+                            <button class="btn-project" data-bs-toggle="modal" data-bs-target="#modalStage1">
+                                En savoir plus <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="project-card-compact project-card-stage">
+                            <div class="stage-label"><i class="fas fa-calendar-alt"></i> Janvier – Février 2026</div>
+                            <div class="project-icon project-icon-stage"><i class="fas fa-paw"></i></div>
+                            <h3>Stage 2 — MyVetApps2</h3>
+                            <p class="project-tech">Symfony 7 / PHP 8 / MySQL</p>
+                            <p class="project-short">Refonte d'un logiciel métier pour cabinets vétérinaires — Coveto.</p>
+                            <button class="btn-project" data-bs-toggle="modal" data-bs-target="#modalStage2">
+                                En savoir plus <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Tableau de compétences BTS SIO -->
+    <section id="projets" class="projets">
+        <div class="container">
+            <h2 class="section-title">Mon Projet Personnel</h2>
+
+            <!-- BLOC 3 : Projet personnel -->
+            <div class="projet-bloc projet-bloc-perso">
+                <div class="projet-bloc-header">
+                    <div class="projet-bloc-icon projet-bloc-icon-perso"><i class="fas fa-star"></i></div>
+                    <div>
+                        <h3 class="projet-bloc-title">Projet personnel</h3>
+                        <p class="projet-bloc-desc">Initiative personnelle menée en autonomie complète, de la conception au déploiement.</p>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-5">
+                        <div class="project-card-compact project-card-perso">
+                            <div class="project-icon project-icon-perso"><i class="fas fa-bicycle"></i></div>
+                            <h3>Refonte site — Vélo Club Montaigu</h3>
+                            <p class="project-tech">PHP MVC / CSS / JS / Figma</p>
+                            <p class="project-short">Refonte complète du site web d'un club cycliste local — projet autonome avec client réel.</p>
+                            <button class="btn-project" data-bs-toggle="modal" data-bs-target="#modalPersonnel">
+                                En savoir plus <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TABLEAU COMPÉTENCES ===== -->
     <section id="tableau-competences" class="tableau-competences">
         <div class="container">
             <h2 class="section-title">Tableau de compétences BTS SIO</h2>
@@ -295,153 +276,214 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><td>Gérer le patrimoine informatique</td><td>AP1 SISR</td><td><span class="badge">Avancé</span></td></tr>
-                        <tr><td>Répondre aux incidents et demandes d'assistance</td><td>Stage MyVetApps2</td><td><span class="badge">Intermédiaire</span></td></tr>
-                        <tr><td>Développer la présence en ligne de l'organisation</td><td>Stage Axéolys</td><td><span class="badge">Avancé</span></td></tr>
-                        <tr><td>Travailler en mode projet</td><td>AP4 Trouve Ton Job</td><td><span class="badge">Avancé</span></td></tr>
-                        <tr><td>Mettre à disposition des utilisateurs un service informatique</td><td>Projet club de vélo</td><td><span class="badge">Intermédiaire</span></td></tr>
-                        <tr><td>Organiser son développement professionnel</td><td>Veille technologique + Tous projets</td><td><span class="badge">Avancé</span></td></tr>
-                        <tr><td>Concevoir et développer une application</td><td>AP3 MUDRY AVIATION</td><td><span class="badge">Avancé</span></td></tr>
-                        <tr><td>Maintenir en condition opérationnelle une application</td><td>Projet club de vélo (refonte)</td><td><span class="badge">Intermédiaire</span></td></tr>
+                        <tr><td>Gérer le patrimoine informatique</td><td>AP1 SISR</td><td><span class="badge badge-avance">Avancé</span></td></tr>
+                        <tr><td>Répondre aux incidents et demandes d'assistance</td><td>Stage MyVetApps2</td><td><span class="badge badge-inter">Intermédiaire</span></td></tr>
+                        <tr><td>Développer la présence en ligne de l'organisation</td><td>Stage Axéolys</td><td><span class="badge badge-avance">Avancé</span></td></tr>
+                        <tr><td>Travailler en mode projet</td><td>AP4 — Trouve Ton Job</td><td><span class="badge badge-avance">Avancé</span></td></tr>
+                        <tr><td>Mettre à disposition des utilisateurs un service informatique</td><td>Projet Vélo Club</td><td><span class="badge badge-inter">Intermédiaire</span></td></tr>
+                        <tr><td>Organiser son développement professionnel</td><td>Veille technologique + Tous projets</td><td><span class="badge badge-avance">Avancé</span></td></tr>
+                        <tr><td>Concevoir et développer une application</td><td>AP3 — MUDRY Aviation</td><td><span class="badge badge-avance">Avancé</span></td></tr>
+                        <tr><td>Maintenir en condition opérationnelle une application</td><td>Projet Vélo Club (refonte)</td><td><span class="badge badge-inter">Intermédiaire</span></td></tr>
                     </tbody>
                 </table>
             </div>
         </div>
     </section>
 
-    <!-- Veille technologique -->
+    <!-- ===== VEILLE TECHNOLOGIQUE ===== -->
     <section id="veille" class="veille">
         <div class="container">
             <h2 class="section-title">Veille technologique</h2>
- 
+
             <!-- Thème & Problématique -->
-            <div class="row mb-4">
+            <div class="row mb-5">
                 <div class="col-lg-10 mx-auto">
                     <div class="veille-intro-card">
                         <div class="veille-theme-badge">
                             <i class="fas fa-robot"></i> Thème de veille
                         </div>
-                        <h3>L'intelligence artificielle dans le développement logiciel</h3>
+                        <h3>Les évolutions de l'IA dans le développement logiciel</h3>
                         <p class="veille-problematique">
-                            <strong>Problématique :</strong> Dans quelle mesure l'intelligence artificielle transforme-t-elle le métier de développeur, et quelles en sont les opportunités et les limites ?
+                            <strong>Problématique :</strong> Dans quelle mesure l'intelligence artificielle transforme-t-elle le métier de développeur, et le <em>vibe coding</em> représente-t-il une révolution ou un risque pour la profession ?
                         </p>
                     </div>
                 </div>
             </div>
- 
+
+            <!-- Ma méthode de veille -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h3 class="veille-section-title"><i class="fas fa-search"></i> Comment je gère ma veille</h3>
+                </div>
+                <div class="col-md-4">
+                    <div class="veille-methode-card">
+                        <div class="veille-methode-step">1</div>
+                        <div class="veille-methode-icon"><i class="fas fa-rss"></i></div>
+                        <h4>Collecte de l'information</h4>
+                        <p>Je consulte régulièrement mes sources : flux RSS via Feedly, newsletter Dev.to, chaînes YouTube techniques et alertes Google sur mes mots-clés (<em>"IA développement"</em>, <em>"vibe coding"</em>, <em>"GitHub Copilot"</em>).</p>
+                        <ul>
+                            <li>Feedly (agrégateur RSS)</li>
+                            <li>Alertes Google Actualités</li>
+                            <li>YouTube : Fireship, Underscore_, Grafikart</li>
+                            <li>Twitter/X et LinkedIn Tech</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="veille-methode-card">
+                        <div class="veille-methode-step">2</div>
+                        <div class="veille-methode-icon"><i class="fas fa-filter"></i></div>
+                        <h4>Tri & sélection</h4>
+                        <p>Je filtre les informations selon leur pertinence par rapport à ma problématique, leur fiabilité (source connue, auteur expert) et leur actualité. Je classe ensuite par sous-thème dans Notion.</p>
+                        <ul>
+                            <li>Critère de fiabilité de la source</li>
+                            <li>Date de publication (max. 18 mois)</li>
+                            <li>Pertinence par rapport au sujet</li>
+                            <li>Classement dans Notion par thème</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="veille-methode-card">
+                        <div class="veille-methode-step">3</div>
+                        <div class="veille-methode-icon"><i class="fas fa-pen-nib"></i></div>
+                        <h4>Synthèse</h4>
+                        <p>Je reformule les informations dans mes propres mots, identifie les points communs entre les sources et en tire une analyse personnelle. Je rédige une synthèse courte pour chaque sous-thème.</p>
+                        <ul>
+                            <li>Reformulation et prise de notes</li>
+                            <li>Comparaison entre sources</li>
+                            <li>Analyse critique et avis personnel</li>
+                            <li>Mise à jour régulière</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
             <!-- 4 sous-thèmes -->
-            <div class="row g-4 mb-4">
- 
-                <!-- Sous-thème 1 -->
-                <div class="col-md-6">
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h3 class="veille-section-title"><i class="fas fa-brain"></i> Synthèse par sous-thème</h3>
+                </div>
+
+                <div class="col-md-6 mb-4">
                     <div class="veille-card veille-card-numbered">
                         <div class="veille-number">01</div>
                         <i class="fas fa-code"></i>
                         <h3>Les outils d'assistance au code</h3>
-                        <!--<p>Des outils comme <strong>GitHub Copilot</strong> ou <strong>Cursor</strong> s'intègrent directement dans l'éditeur et suggèrent du code en temps réel. J'utilise GitHub Copilot et ChatGPT / Claude au quotidien dans mes projets, ce qui m'a permis d'observer concrètement leur impact sur la productivité et l'apprentissage.</p>
+                        <p>Des outils comme <strong>GitHub Copilot</strong>, <strong>Cursor</strong> ou <strong>Claude</strong> s'intègrent directement dans l'éditeur et suggèrent du code en temps réel à partir du contexte. GitHub Copilot, lancé en 2022, est aujourd'hui utilisé par plus de 1,8 million de développeurs. J'utilise moi-même Copilot et Claude au quotidien dans mes projets, ce qui m'a permis d'observer concrètement leur impact : gain de temps sur les tâches répétitives, aide au débogage, génération de documentation.</p>
+                        <p><strong>Mon analyse :</strong> Ces outils accélèrent le travail, mais exigent une compréhension solide du code généré — ils ne dispensent pas d'apprendre les fondamentaux.</p>
                         <ul>
                             <li>GitHub Copilot (Microsoft / OpenAI)</li>
                             <li>Cursor — éditeur IA basé sur VS Code</li>
                             <li>Claude & ChatGPT — assistance contextuelle</li>
-                        </ul>-->
+                            <li>Amazon CodeWhisperer</li>
+                        </ul>
                     </div>
                 </div>
- 
-                <!-- Sous-thème 2 -->
-                <div class="col-md-6">
+
+                <div class="col-md-6 mb-4">
                     <div class="veille-card veille-card-numbered">
                         <div class="veille-number">02</div>
                         <i class="fas fa-wand-magic-sparkles"></i>
                         <h3>Le Vibe Coding</h3>
-                        <!--<p>Concept introduit par <strong>Andrej Karpathy</strong> (cofondateur d'OpenAI) en février 2025, le vibe coding désigne le fait de générer du code entièrement via des descriptions en langage naturel, sans écrire soi-même la moindre ligne. En mars 2025, 25 % des startups du programme Y Combinator avaient des bases de code générées à 95 % par IA.</p>
+                        <p>Concept introduit par <strong>Andrej Karpathy</strong> (cofondateur d'OpenAI) en <strong>février 2025</strong> via un post sur X, le <em>vibe coding</em> désigne le fait de générer du code entièrement via des descriptions en langage naturel, sans écrire soi-même la moindre ligne. Le développeur décrit ce qu'il veut, l'IA génère, et on itère par corrections orales.</p>
+                        <p>En <strong>mars 2025</strong>, 25 % des startups du programme Y Combinator avaient des bases de code générées à 95 % par IA (source : Garry Tan, CEO de YC). Des plateformes comme <strong>Lovable</strong>, <strong>Replit Agent</strong> et <strong>Firebase Studio</strong> permettent de créer des applications complètes en quelques heures.</p>
+                        <p><strong>Mon analyse :</strong> Le vibe coding est une révolution pour le prototypage rapide, mais produit du code difficile à maintenir. Sans compréhension de l'architecture, corriger les bugs devient impossible.</p>
                         <ul>
                             <li>Prototypage ultra-rapide d'applications</li>
-                            <li>Outils : Replit Agent, Lovable, Firebase Studio</li>
-                            <li>Risque : code non maîtrisé, bugs difficiles à corriger</li>
-                        </ul>-->
+                            <li>Outils : Lovable, Replit Agent, Firebase Studio, Bolt.new</li>
+                            <li>Risque : code non maîtrisé, dette technique élevée</li>
+                        </ul>
                     </div>
                 </div>
- 
-                <!-- Sous-thème 3 -->
-                <div class="col-md-6">
+
+                <div class="col-md-6 mb-4">
                     <div class="veille-card veille-card-numbered">
                         <div class="veille-number">03</div>
                         <i class="fas fa-user-gear"></i>
-                        <h3>L'évolution du rôle de développeur</h3>
-                        <!---<p>L'IA ne remplace pas le développeur, elle fait évoluer son rôle. Le développeur devient davantage un <strong>architecte et superviseur</strong> qui valide, teste et oriente le code généré. Les compétences en communication avec l'IA (prompt engineering) deviennent aussi importantes que la maîtrise des langages.</p>
+                        <h3>L'évolution du rôle du développeur</h3>
+                        <p>L'IA ne remplace pas le développeur — elle fait évoluer son rôle. Le développeur devient davantage un <strong>architecte et superviseur</strong> qui valide, teste et oriente le code généré. Les compétences en <em>prompt engineering</em> (la capacité à formuler des instructions précises à une IA) deviennent aussi importantes que la maîtrise des langages.</p>
+                        <p>Selon une étude McKinsey (2024), les développeurs utilisant des outils IA gagnent jusqu'à <strong>55 % de productivité</strong> sur les tâches de documentation et de test. En revanche, la conception d'architecture, la logique métier complexe et la compréhension du domaine client restent des compétences irremplaçables.</p>
                         <ul>
                             <li>De codeur à orchestrateur d'IA</li>
                             <li>Montée en importance du prompt engineering</li>
                             <li>L'architecture et la logique métier restent humaines</li>
-                        </ul>-->
+                            <li>Communication et analyse des besoins toujours clés</li>
+                        </ul>
                     </div>
                 </div>
- 
-                <!-- Sous-thème 4 -->
-                <div class="col-md-6">
+
+                <div class="col-md-6 mb-4">
                     <div class="veille-card veille-card-numbered">
                         <div class="veille-number">04</div>
                         <i class="fas fa-triangle-exclamation"></i>
                         <h3>Limites et risques</h3>
-                        <!--<p>L'adoption massive de l'IA dans le développement soulève des questions sérieuses. Selon le rapport Veracode 2025, <strong>45 % du code généré par IA</strong> introduit des vulnérabilités de sécurité connues (failles OWASP). Une supervision humaine reste indispensable, surtout en contexte professionnel.</p>
+                        <p>L'adoption massive de l'IA dans le développement soulève des questions sérieuses. Selon le rapport <strong>Veracode (2025)</strong>, <strong>45 % du code généré par IA</strong> introduit des vulnérabilités de sécurité connues (injection SQL, XSS, mauvaise gestion des droits). Une supervision humaine reste indispensable, surtout en contexte professionnel.</p>
+                        <p>Par ailleurs, le code généré par IA tend à être <strong>redondant, peu optimisé</strong> et mal documenté, ce qui crée une dette technique importante sur le long terme. La question de la <strong>propriété intellectuelle</strong> du code généré reste aussi un débat ouvert.</p>
                         <ul>
-                            <li>Vulnérabilités de sécurité non détectées</li>
+                            <li>Vulnérabilités OWASP non détectées (45% du code IA)</li>
                             <li>Code difficile à maintenir à grande échelle</li>
                             <li>Dépendance excessive aux outils IA</li>
-                        </ul>-->
+                            <li>Questions de propriété intellectuelle</li>
+                        </ul>
                     </div>
                 </div>
             </div>
- 
+
             <!-- Sources -->
             <div class="row">
+                <div class="col-12">
+                    <h3 class="veille-section-title"><i class="fas fa-newspaper"></i> Sources utilisées</h3>
+                </div>
                 <div class="col-lg-10 mx-auto">
                     <div class="veille-card veille-sources">
-                        <i class="fas fa-newspaper"></i>
-                        <h3>Sources utilisées</h3>
-                        <div class="row mt-3">
+                        <div class="row mt-2">
                             <div class="col-md-4">
-                                <p><strong>📰 Articles & blogs</strong></p>
+                                <p><strong><i class="fas fa-file-alt"></i> Articles & blogs</strong></p>
                                 <ul>
-                                    <li>...</li>
+                                    <li><a href="https://karpathy.medium.com" target="_blank">Andrej Karpathy — Medium</a></li>
+                                    <li><a href="https://dev.to" target="_blank">Dev.to — communauté dev</a></li>
+                                    <li><a href="https://github.blog" target="_blank">GitHub Blog</a></li>
+                                    <li><a href="https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights" target="_blank">McKinsey Digital Insights</a></li>
                                 </ul>
                             </div>
                             <div class="col-md-4">
-                                <p><strong>🎥 Vidéos & podcasts</strong></p>
+                                <p><strong><i class="fab fa-youtube"></i> Vidéos & podcasts</strong></p>
                                 <ul>
-                                    <li>...</li>
+                                    <li><a href="https://www.youtube.com/@Fireship" target="_blank">Fireship (YouTube)</a></li>
+                                    <li><a href="https://www.youtube.com/@Underscore_" target="_blank">Underscore_ (YouTube)</a></li>
+                                    <li><a href="https://www.youtube.com/grafikart" target="_blank">Grafikart (YouTube)</a></li>
+                                    <li>Changelog Podcast</li>
                                 </ul>
                             </div>
                             <div class="col-md-4">
-                                <p><strong>🔬 Rapports & études</strong></p>
+                                <p><strong><i class="fas fa-flask"></i> Rapports & études</strong></p>
                                 <ul>
-                                    <li>...</li>
+                                    <li><a href="https://www.veracode.com/resources/state-of-software-security" target="_blank">Veracode — State of Software Security 2025</a></li>
+                                    <li><a href="https://survey.stackoverflow.co" target="_blank">Stack Overflow Developer Survey 2024</a></li>
+                                    <li><a href="https://github.blog/news-insights/research" target="_blank">GitHub Octoverse 2024</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
- 
+
         </div>
     </section>
 
-    <!-- Contact -->
+    <!-- ===== CONTACT ===== -->
     <section id="contact" class="contact">
         <div class="container">
             <h2 class="section-title">Contact</h2>
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <div class="contact-cards">
-                        <a href="mailto:capucine.piquart@esupec.fr" class="contact-card">
+                        <a href="mailto:capupiquart@gmail.com" class="contact-card">
                             <i class="fas fa-envelope"></i>
-                            <span>capucine.piquart@esupec.fr</span>
+                            <span>capupiquart@gmail.com</span>
                         </a>
-                        <a href="https://github.com/capucinepiquart" target="_blank" class="contact-card">
-                            <i class="fab fa-github"></i>
-                            <span>github.com/capucinepiquart</span>
-                        </a>
-                        <a href="https://linkedin.com/in/capucine-piquart" target="_blank" class="contact-card">
+                        <a href="https://www.linkedin.com/in/capucine-piquart/" target="_blank" class="contact-card">
                             <i class="fab fa-linkedin"></i>
                             <span>linkedin.com/in/capucine-piquart</span>
                         </a>
@@ -451,43 +493,74 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- ===== FOOTER ===== -->
     <footer>
         <div class="container">
-            <p>&copy; <span id="year"></span> Capucine Piquart - Tous droits réservés</p>
+            <p>&copy; <span id="year"></span> Capucine Piquart — Portfolio BTS SIO SLAM</p>
         </div>
     </footer>
 
-    <!-- ==================== MODALS PROJETS ==================== -->
+
+    <!-- ================================================
+         MODALS PROJETS — APs
+    ================================================ -->
 
     <!-- Modal AP1 SISR -->
     <div class="modal fade" id="modalAP1SISR" tabindex="-1">
-        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title"><i class="fas fa-network-wired"></i> AP1 - Mise en place d'un système d'information</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content modal-projet-content">
+                <div class="modal-header modal-header-ap">
+                    <div class="modal-header-icon"><i class="fas fa-network-wired"></i></div>
+                    <div>
+                        <span class="modal-tag modal-tag-ap">AP · SISR · 2024</span>
+                        <h5 class="modal-title">AP1 — Mise en place d'un système d'information</h5>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h6><i class="fas fa-calendar"></i> Contexte</h6>
-                            <p>Projet académique de première année consistant à concevoir et simuler l'infrastructure réseau d'une petite entreprise.</p>
-                            <h6><i class="fas fa-bullseye"></i> Objectif</h6>
-                            <p>Créer une architecture réseau fonctionnelle avec segmentation, sécurité et services de base (DHCP, DNS, HTTP).</p>
-                            <h6><i class="fas fa-microchip"></i> Technologies</h6>
-                            <div class="tech-tags"><span>Cisco Packet Tracer</span><span>TCP/IP</span><span>VLAN</span></div>
+                <div class="modal-body modal-projet-body">
+                    <div class="row g-4">
+                        <div class="col-lg-7">
+                            <!-- Zone captures d'écran -->
+                            <div class="modal-screenshots">
+                                <div class="screenshot-placeholder">
+                                    <i class="fas fa-image"></i>
+                                    <p>Capture 1 — Topologie réseau</p>
+                                    <span>Remplacer par votre image</span>
+                                </div>
+                                <div class="screenshot-placeholder">
+                                    <i class="fas fa-image"></i>
+                                    <p>Capture 2 — Configuration</p>
+                                    <span>Remplacer par votre image</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-6">
-                            <h6><i class="fas fa-graduation-cap"></i> Compétences développées</h6>
-                            <ul><li>Conception d'architecture réseau</li><li>Configuration d'équipements Cisco</li><li>Sécurisation d'un réseau</li><li>Travail en mode projet</li></ul>
-                            <h6><i class="fas fa-exclamation-triangle"></i> Difficultés & solutions</h6>
-                            <p>La configuration du routage inter-VLAN a été complexe. J'ai résolu le problème en documentant minutieusement les commandes et en testant étape par étape.</p>
+                        <div class="col-lg-5">
+                            <div class="modal-info-section">
+                                <h6><i class="fas fa-info-circle"></i> Contexte</h6>
+                                <p>Projet académique de première année consistant à concevoir et simuler l'infrastructure réseau d'une petite entreprise.</p>
+                            </div>
+                            <div class="modal-info-section">
+                                <h6><i class="fas fa-bullseye"></i> Objectif</h6>
+                                <p>Créer une architecture réseau fonctionnelle avec segmentation VLAN, sécurité et services de base (DHCP, DNS).</p>
+                            </div>
+                            <div class="modal-info-section">
+                                <h6><i class="fas fa-graduation-cap"></i> Compétences développées</h6>
+                                <ul class="modal-skill-list">
+                                    <li>Conception d'architecture réseau</li>
+                                    <li>Configuration d'équipements Cisco</li>
+                                    <li>Sécurisation d'un réseau (VLAN)</li>
+                                    <li>Travail en mode projet</li>
+                                </ul>
+                            </div>
+                            <div class="modal-info-section">
+                                <h6><i class="fas fa-exclamation-triangle"></i> Difficulté rencontrée</h6>
+                                <p>La configuration du routage inter-VLAN a été complexe. Résolu en documentant minutieusement les commandes et en testant étape par étape.</p>
+                            </div>
+                            <div class="modal-tech-footer">
+                                <span>Cisco Packet Tracer</span><span>TCP/IP</span><span>VLAN</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
                 </div>
             </div>
         </div>
@@ -495,32 +568,59 @@
 
     <!-- Modal AP1 SLAM -->
     <div class="modal fade" id="modalAP1SLAM" tabindex="-1">
-        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title"><i class="fas fa-hands-helping"></i> AP1 - Service à la personne</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content modal-projet-content">
+                <div class="modal-header modal-header-ap">
+                    <div class="modal-header-icon"><i class="fas fa-hands-helping"></i></div>
+                    <div>
+                        <span class="modal-tag modal-tag-ap">AP · SLAM · 2024</span>
+                        <h5 class="modal-title">AP1 — Service à la personne</h5>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h6><i class="fas fa-calendar"></i> Contexte</h6>
-                            <p>Application web permettant de mettre en relation des personnes âgées avec des aides à domicile.</p>
-                            <h6><i class="fas fa-bullseye"></i> Objectif</h6>
-                            <p>Développer une plateforme avec CRUD pour gérer les utilisateurs, les services et les réservations.</p>
-                            <h6><i class="fas fa-microchip"></i> Technologies</h6>
-                            <div class="tech-tags"><span>PHP</span><span>MySQL</span><span>HTML/CSS</span><span>Bootstrap</span></div>
+                <div class="modal-body modal-projet-body">
+                    <div class="row g-4">
+                        <div class="col-lg-7">
+                            <div class="modal-screenshots">
+                                <div class="screenshot-placeholder">
+                                    <i class="fas fa-image"></i>
+                                    <p>Capture 1 — Page d'accueil</p>
+                                    <span>Remplacer par votre image</span>
+                                </div>
+                                <div class="screenshot-placeholder">
+                                    <i class="fas fa-image"></i>
+                                    <p>Capture 2 — Interface de gestion</p>
+                                    <span>Remplacer par votre image</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-6">
-                            <h6><i class="fas fa-graduation-cap"></i> Compétences développées</h6>
-                            <ul><li>Maîtrise du CRUD complet</li><li>Modélisation de base de données</li><li>Gestion des sessions utilisateurs</li><li>Sécurisation des formulaires</li></ul>
-                            <h6><i class="fas fa-exclamation-triangle"></i> Difficultés & solutions</h6>
-                            <p>La gestion des disponibilités des intervenants a été un défi. J'ai opté pour une table de planning avec vérification des conflits horaires.</p>
+                        <div class="col-lg-5">
+                            <div class="modal-info-section">
+                                <h6><i class="fas fa-info-circle"></i> Contexte</h6>
+                                <p>Application web permettant de mettre en relation des personnes âgées avec des aides à domicile agréées.</p>
+                            </div>
+                            <div class="modal-info-section">
+                                <h6><i class="fas fa-bullseye"></i> Objectif</h6>
+                                <p>Développer une plateforme avec CRUD complet pour gérer les utilisateurs, les services proposés et les réservations.</p>
+                            </div>
+                            <div class="modal-info-section">
+                                <h6><i class="fas fa-graduation-cap"></i> Compétences développées</h6>
+                                <ul class="modal-skill-list">
+                                    <li>Maîtrise du CRUD complet</li>
+                                    <li>Modélisation de base de données</li>
+                                    <li>Gestion des sessions utilisateurs</li>
+                                    <li>Sécurisation des formulaires</li>
+                                </ul>
+                            </div>
+                            <div class="modal-info-section">
+                                <h6><i class="fas fa-exclamation-triangle"></i> Difficulté rencontrée</h6>
+                                <p>La gestion des disponibilités des intervenants. Résolu avec une table de planning et vérification des conflits horaires côté serveur.</p>
+                            </div>
+                            <div class="modal-tech-footer">
+                                <span>PHP</span><span>MySQL</span><span>HTML/CSS</span><span>Bootstrap</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
                 </div>
             </div>
         </div>
@@ -528,131 +628,119 @@
 
     <!-- Modal AP2 Course Hippique -->
     <div class="modal fade" id="modalAP2" tabindex="-1">
-        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title"><i class="fas fa-horse"></i> AP2 - Application de gestion (Course Hippique)</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content modal-projet-content">
+                <div class="modal-header modal-header-ap">
+                    <div class="modal-header-icon"><i class="fas fa-horse"></i></div>
+                    <div>
+                        <span class="modal-tag modal-tag-ap">AP · SLAM · 2024</span>
+                        <h5 class="modal-title">AP2 — Application Course Hippique</h5>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h6><i class="fas fa-calendar"></i> Contexte</h6>
-                            <p>Projet académique pour une société organisatrice de courses hippiques nécessitant un outil de gestion moderne.</p>
-                            <h6><i class="fas fa-bullseye"></i> Objectif</h6>
-                            <p>Développer une application complète avec CRUD pour gérer chevaux, courses et parieurs.</p>
-                            <h6><i class="fas fa-microchip"></i> Technologies</h6>
-                            <div class="tech-tags"><span>PHP</span><span>MySQL</span><span>JavaScript</span><span>Bootstrap</span></div>
+                <div class="modal-body modal-projet-body">
+                    <div class="row g-4">
+                        <div class="col-lg-7">
+                            <div class="modal-screenshots">
+                                <div class="screenshot-placeholder">
+                                    <i class="fas fa-image"></i>
+                                    <p>Capture 1 — Gestion des chevaux</p>
+                                    <span>Remplacer par votre image</span>
+                                </div>
+                                <div class="screenshot-placeholder">
+                                    <i class="fas fa-image"></i>
+                                    <p>Capture 2 — Tableau des courses</p>
+                                    <span>Remplacer par votre image</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-6">
-                            <h6><i class="fas fa-graduation-cap"></i> Compétences développées</h6>
-                            <ul><li>Modélisation de bases de données</li><li>Logique métier complexe</li><li>Sécurisation des accès</li><li>Gestion des transactions</li></ul>
-                            <h6><i class="fas fa-exclamation-triangle"></i> Difficultés & solutions</h6>
-                            <p>Gestion des mises à jour concurrentes - implémentation d'un système de verrouillage optimiste pour éviter les conflits.</p>
+                        <div class="col-lg-5">
+                            <div class="modal-info-section">
+                                <h6><i class="fas fa-info-circle"></i> Contexte</h6>
+                                <p>Projet académique pour une société organisatrice de courses hippiques nécessitant un outil de gestion centralisé et moderne.</p>
+                            </div>
+                            <div class="modal-info-section">
+                                <h6><i class="fas fa-bullseye"></i> Objectif</h6>
+                                <p>Développer une application CRUD complète pour gérer les chevaux, les courses, les jockeys et les parieurs avec leurs mises.</p>
+                            </div>
+                            <div class="modal-info-section">
+                                <h6><i class="fas fa-graduation-cap"></i> Compétences développées</h6>
+                                <ul class="modal-skill-list">
+                                    <li>Modélisation de bases de données (Merise)</li>
+                                    <li>Logique métier complexe</li>
+                                    <li>Sécurisation des accès</li>
+                                    <li>Gestion des transactions SQL</li>
+                                </ul>
+                            </div>
+                            <div class="modal-info-section">
+                                <h6><i class="fas fa-exclamation-triangle"></i> Difficulté rencontrée</h6>
+                                <p>Gestion des mises à jour concurrentes sur les cotes. Résolu par l'implémentation d'un verrouillage optimiste côté base de données.</p>
+                            </div>
+                            <div class="modal-tech-footer">
+                                <span>PHP</span><span>MySQL</span><span>JavaScript</span><span>Bootstrap</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Modal Stage 1 - Axéolys -->
-    <div class="modal fade" id="modalStage1" tabindex="-1">
-        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title"><i class="fas fa-building"></i> Stage 1 - Site vitrine Axéolys</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h6><i class="fas fa-calendar"></i> Contexte</h6>
-                            <p>Stage au Groupe Duret Immobilier. Mission : créer un site vitrine pour Axéolys, une ESN en création.</p>
-                            <h6><i class="fas fa-bullseye"></i> Objectif</h6>
-                            <p>Site responsive avec formulaire de contact, contenu dynamique et administration simple.</p>
-                            <h6><i class="fas fa-microchip"></i> Technologies</h6>
-                            <div class="tech-tags"><span>Vue.js 3</span><span>HTML5/CSS3</span><span>JavaScript</span><span>Bootstrap</span></div>
-                        </div>
-                        <div class="col-md-6">
-                            <h6><i class="fas fa-graduation-cap"></i> Compétences développées</h6>
-                            <ul><li>Relation client et gestion des besoins</li><li>Apprentissage autonome de Vue.js</li><li>Responsive design</li><li>Respect des délais</li></ul>
-                            <h6><i class="fas fa-exclamation-triangle"></i> Difficultés & solutions</h6>
-                            <p>Découverte du framework Vue.js en autonomie. J'ai utilisé la documentation officielle et des tutoriels en ligne pour monter en compétence rapidement.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal AP3 MUDRY AVIATION -->
+    <!-- Modal AP3 MUDRY Aviation -->
     <div class="modal fade" id="modalAP3" tabindex="-1">
-        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title"><i class="fas fa-plane"></i> AP3 - MUDRY AVIATION</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content modal-projet-content">
+                <div class="modal-header modal-header-ap">
+                    <div class="modal-header-icon"><i class="fas fa-plane"></i></div>
+                    <div>
+                        <span class="modal-tag modal-tag-ap">AP · SLAM · 2025</span>
+                        <h5 class="modal-title">AP3 — MUDRY Aviation</h5>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h6><i class="fas fa-calendar"></i> Contexte</h6>
-                            <p>Application métier pour une entreprise de services aéronautiques nécessitant une gestion des employés et des vols.</p>
-                            <h6><i class="fas fa-bullseye"></i> Objectif</h6>
-                            <p>Implémenter un CRUD complet avec Symfony, gérer les relations entre entités complexes.</p>
-                            <h6><i class="fas fa-microchip"></i> Technologies</h6>
-                            <div class="tech-tags"><span>Symfony</span><span>Doctrine</span><span>Bootstrap</span><span>Git/GitHub</span></div>
+                <div class="modal-body modal-projet-body">
+                    <div class="row g-4">
+                        <div class="col-lg-7">
+                            <div class="modal-screenshots">
+                                <div class="screenshot-placeholder">
+                                    <i class="fas fa-image"></i>
+                                    <p>Capture 1 — Gestion des employés</p>
+                                    <span>Remplacer par votre image</span>
+                                </div>
+                                <div class="screenshot-placeholder">
+                                    <i class="fas fa-image"></i>
+                                    <p>Capture 2 — Planning des vols</p>
+                                    <span>Remplacer par votre image</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-6">
-                            <h6><i class="fas fa-graduation-cap"></i> Compétences développées</h6>
-                            <ul><li>Architecture MVC avec Symfony</li><li>Gestion des relations entre entités</li><li>Création de formulaires avec validation</li><li>Système d'authentification</li></ul>
-                            <h6><i class="fas fa-exclamation-triangle"></i> Difficultés & solutions</h6>
-                            <p>La complexité des relations Many-to-Many entre employés et vols. J'ai réalisé une modélisation UML approfondie avant de coder les entités Doctrine.</p>
+                        <div class="col-lg-5">
+                            <div class="modal-info-section">
+                                <h6><i class="fas fa-info-circle"></i> Contexte</h6>
+                                <p>Application métier pour une entreprise de services aéronautiques nécessitant une gestion rigoureuse du personnel navigant et des vols.</p>
+                            </div>
+                            <div class="modal-info-section">
+                                <h6><i class="fas fa-bullseye"></i> Objectif</h6>
+                                <p>Implémenter un CRUD complet avec Symfony pour gérer les employés, les avions et les vols, avec gestion des relations Many-to-Many.</p>
+                            </div>
+                            <div class="modal-info-section">
+                                <h6><i class="fas fa-graduation-cap"></i> Compétences développées</h6>
+                                <ul class="modal-skill-list">
+                                    <li>Architecture MVC avec Symfony</li>
+                                    <li>Relations Doctrine (OneToMany, ManyToMany)</li>
+                                    <li>Formulaires Symfony avec validation</li>
+                                    <li>Système d'authentification</li>
+                                </ul>
+                            </div>
+                            <div class="modal-info-section">
+                                <h6><i class="fas fa-exclamation-triangle"></i> Difficulté rencontrée</h6>
+                                <p>Complexité des relations entre entités (employé ↔ vols). Résolu par une modélisation UML approfondie avant de coder les entités Doctrine.</p>
+                            </div>
+                            <div class="modal-tech-footer">
+                                <span>Symfony</span><span>Doctrine ORM</span><span>Bootstrap</span><span>Git/GitHub</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal Stage 2 - MyVetApps2 -->
-    <div class="modal fade" id="modalStage2" tabindex="-1">
-        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title"><i class="fas fa-paw"></i> Stage 2 - MyVetApps2</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h6><i class="fas fa-calendar"></i> Contexte</h6>
-                            <p>Stage chez Coveto (ex-MyVetApps) pour la refonte d'un logiciel métier destiné aux cabinets vétérinaires.</p>
-                            <h6><i class="fas fa-bullseye"></i> Objectif</h6>
-                            <p>Implémenter CRUD espèces/races, développer un agenda dynamique, travailler en équipe.</p>
-                            <h6><i class="fas fa-microchip"></i> Technologies</h6>
-                            <div class="tech-tags"><span>Symfony 7</span><span>PHP 8</span><span>MySQL</span><span>Git/GitHub</span></div>
-                        </div>
-                        <div class="col-md-6">
-                            <h6><i class="fas fa-graduation-cap"></i> Compétences développées</h6>
-                            <ul><li>Travail collaboratif et gestion de versions</li><li>Conception d'interfaces utilisateur</li><li>Tests unitaires</li><li>Correction de bugs en environnement existant</li></ul>
-                            <h6><i class="fas fa-exclamation-triangle"></i> Difficultés & solutions</h6>
-                            <p>La synchronisation de l'agenda en temps réel. J'ai implémenté des observateurs avec JavaScript pour rafraîchir l'affichage sans rechargement.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
                 </div>
             </div>
         </div>
@@ -660,71 +748,282 @@
 
     <!-- Modal AP4 Trouve Ton Job -->
     <div class="modal fade" id="modalAP4" tabindex="-1">
-        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title"><i class="fas fa-briefcase"></i> AP4 - Trouve Ton Job</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content modal-projet-content">
+                <div class="modal-header modal-header-ap">
+                    <div class="modal-header-icon"><i class="fas fa-briefcase"></i></div>
+                    <div>
+                        <span class="modal-tag modal-tag-ap">AP · SLAM · 2026</span>
+                        <h5 class="modal-title">AP4 — Trouve Ton Job</h5>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h6><i class="fas fa-calendar"></i> Contexte</h6>
-                            <p>Plateforme de recrutement innovante pour mettre en relation candidats et recruteurs.</p>
-                            <h6><i class="fas fa-bullseye"></i> Objectif</h6>
-                            <p>CRUD offres d'emploi, système d'acceptation/refus des candidatures, gestion des rôles.</p>
-                            <h6><i class="fas fa-microchip"></i> Technologies</h6>
-                            <div class="tech-tags"><span>Symfony</span><span>MySQL</span><span>API REST</span><span>JavaScript</span></div>
+                <div class="modal-body modal-projet-body">
+                    <div class="row g-4">
+                        <div class="col-lg-7">
+                            <div class="modal-screenshots">
+                                <div class="screenshot-placeholder">
+                                    <i class="fas fa-image"></i>
+                                    <p>Capture 1 — Liste des offres</p>
+                                    <span>Remplacer par votre image</span>
+                                </div>
+                                <div class="screenshot-placeholder">
+                                    <i class="fas fa-image"></i>
+                                    <p>Capture 2 — Espace recruteur</p>
+                                    <span>Remplacer par votre image</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-6">
-                            <h6><i class="fas fa-graduation-cap"></i> Compétences développées</h6>
-                            <ul><li>Gestion des droits utilisateurs (Voter)</li><li>Sécurité des rôles</li><li>Création d'API REST</li><li>Notifications automatiques</li></ul>
-                            <h6><i class="fas fa-exclamation-triangle"></i> Difficultés & solutions</h6>
-                            <p>Le workflow de validation des candidatures. J'ai implémenté un système de statuts avec notifications automatiques par email via Mailer.</p>
+                        <div class="col-lg-5">
+                            <div class="modal-info-section">
+                                <h6><i class="fas fa-info-circle"></i> Contexte</h6>
+                                <p>Plateforme de recrutement mettant en relation des candidats et des recruteurs, avec gestion du cycle de candidature complet.</p>
+                            </div>
+                            <div class="modal-info-section">
+                                <h6><i class="fas fa-bullseye"></i> Objectif</h6>
+                                <p>CRUD des offres d'emploi, système d'acceptation/refus des candidatures, gestion des rôles (candidat, recruteur, admin) et notifications.</p>
+                            </div>
+                            <div class="modal-info-section">
+                                <h6><i class="fas fa-graduation-cap"></i> Compétences développées</h6>
+                                <ul class="modal-skill-list">
+                                    <li>Gestion des rôles et permissions (Voter)</li>
+                                    <li>Création et consommation d'une API REST</li>
+                                    <li>Notifications email via Symfony Mailer</li>
+                                    <li>Machine à états (candidature)</li>
+                                </ul>
+                            </div>
+                            <div class="modal-info-section">
+                                <h6><i class="fas fa-exclamation-triangle"></i> Difficulté rencontrée</h6>
+                                <p>Le workflow de validation des candidatures. Résolu avec un système de statuts et notifications automatiques par email à chaque changement d'état.</p>
+                            </div>
+                            <div class="modal-tech-footer">
+                                <span>Symfony</span><span>MySQL</span><span>API REST</span><span>JavaScript</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Modal Projet Personnel - Club de vélo -->
+    <!-- ================================================
+         MODALS STAGES
+    ================================================ -->
+
+    <!-- Modal Stage 1 Axéolys -->
+    <div class="modal fade" id="modalStage1" tabindex="-1">
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content modal-projet-content">
+                <div class="modal-header modal-header-stage">
+                    <div class="modal-header-icon"><i class="fas fa-globe"></i></div>
+                    <div>
+                        <span class="modal-tag modal-tag-stage">Stage · Mai – Juin 2025 · Groupe Duret Immobilier</span>
+                        <h5 class="modal-title">Stage 1 — Site vitrine Axéolys</h5>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body modal-projet-body">
+                    <div class="row g-4">
+                        <div class="col-lg-7">
+                            <div class="modal-screenshots">
+                                <div class="screenshot-placeholder">
+                                    <i class="fas fa-image"></i>
+                                    <p>Capture 1 — Page d'accueil Axéolys</p>
+                                    <span>Remplacer par votre image</span>
+                                </div>
+                                <div class="screenshot-placeholder">
+                                    <i class="fas fa-image"></i>
+                                    <p>Capture 2 — Page services / formulaire</p>
+                                    <span>Remplacer par votre image</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="modal-entreprise-block">
+                                <i class="fas fa-building"></i>
+                                <div>
+                                    <strong>Groupe Duret Immobilier</strong>
+                                    <span>Montaigu-Vendée (85) · 6 semaines</span>
+                                </div>
+                            </div>
+                            <div class="modal-info-section">
+                                <h6><i class="fas fa-info-circle"></i> Contexte</h6>
+                                <p>Une partie de l'équipe du Système d'Information (SI) du Groupe Duret Immobilier créait Axéolys, une nouvelle ESN (Entreprise de Services du Numérique). Il leur fallait un site vitrine professionnel pour les accompagner son lancement et pour présenter leurs services.</p>
+                            </div>
+                            <div class="modal-info-section">
+                                <h6><i class="fas fa-bullseye"></i> Mission</h6>
+                                <p>Créer intégralement le site vitrine responsive en Vue.js3 : page d'accueil, présentation des services, formulaire de contact avec validation JavaScript.</p>
+                            </div>
+                            <div class="modal-info-section">
+                                <h6><i class="fas fa-graduation-cap"></i> Compétences développées</h6>
+                                <ul class="modal-skill-list">
+                                    <li>Apprentissage autonome de Vue.js 3</li>
+                                    <li>Responsive design (Bootstrap)</li>
+                                    <li>Travail dans une équipe SI</li>
+                                    <li>Relation client et recueil des besoins</li>
+                                    <li>Autonomie, adaptabilité et responsabilité</li>
+                                </ul>
+                            </div>
+                            <div class="modal-info-section">
+                                <h6><i class="fas fa-exclamation-triangle"></i> Difficulté rencontrée</h6>
+                                <p>Découverte et apprentissage de Vue.js 3 en autonomie lors du stage. J'ai structuré mon apprentissage avec la documentation officielle et les tutoriels Grafikart pour monter en compétences rapidement.</p>
+                            </div>
+                            <div class="modal-tech-footer">
+                                <span>Vue.js 3</span><span>HTML5/CSS3</span><span>JavaScript</span><span>Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Stage 2 MyVetApps2 -->
+    <div class="modal fade" id="modalStage2" tabindex="-1">
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content modal-projet-content">
+                <div class="modal-header modal-header-stage">
+                    <div class="modal-header-icon"><i class="fas fa-paw"></i></div>
+                    <div>
+                        <span class="modal-tag modal-tag-stage">Stage · Janvier – Février 2026 · Coveto</span>
+                        <h5 class="modal-title">Stage 2 — MyVetApps2</h5>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body modal-projet-body">
+                    <div class="row g-4">
+                        <div class="col-lg-7">
+                            <div class="modal-screenshots">
+                                <div class="screenshot-placeholder">
+                                    <i class="fas fa-image"></i>
+                                    <p>Capture 1 — Gestion espèces/races</p>
+                                    <span>Remplacer par votre image</span>
+                                </div>
+                                <div class="screenshot-placeholder">
+                                    <i class="fas fa-image"></i>
+                                    <p>Capture 2 — Agenda dynamique</p>
+                                    <span>Remplacer par votre image</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="modal-entreprise-block">
+                                <i class="fas fa-building"></i>
+                                <div>
+                                    <strong>Coveto</strong>
+                                    <span>Montaigu-Vendée (85) · 6 semaines</span>
+                                </div>
+                            </div>
+                            <div class="modal-info-section">
+                                <h6><i class="fas fa-info-circle"></i> Contexte</h6>
+                                <p>Coveto développe MyVetApps2, une refonte complète de leur logiciel métier pour les cabinets vétérinaires. Le logiciel de base était en Symfony1. 
+                                    L'équipe du Système d'Information de Coveto a donc décidé de refaire le logiciel en le modernisant grâce à la version 7 du framework Symfony et à PHP8. 
+                                    J'ai pu intégrée l'équipe de développement déjà en place.</p>
+                            </div>
+                            <div class="modal-info-section">
+                                <h6><i class="fas fa-bullseye"></i> Mission</h6>
+                                <ul>
+                                    <li>Implémenter des CRUDs dans l'onglet paramètre</li>
+                                    <li>Développer l'agenda dynamique des rendez-vous</li>
+                                    <li>Corriger des bugs existants</li>
+                                    <li>Travailler en équipe</li>
+                                </ul>
+                            </div>
+                            <div class="modal-info-section">
+                                <h6><i class="fas fa-graduation-cap"></i> Compétences développées</h6>
+                                <ul class="modal-skill-list">
+                                    <li>Travail collaboratif en équipe technique</li>
+                                    <li>Gestion de versions Git (branches, conflits)</li>
+                                    <li>Utilisation d'une base de données préalablement conçue</li>
+                                </ul>
+                            </div>
+                            <div class="modal-info-section">
+                                <h6><i class="fas fa-exclamation-triangle"></i> Difficulté rencontrée</h6>
+                                    <ul>
+                                    <li>L'utilisation du framework Symfony7 alors tout juste vue en cour. J'ai pu continuer de me former grâce à des videos tutoriel de Grafikart et à la formation OpenClassrooms sur Symfony7.</li>
+                                    <li>Arriver sur un projet complexe et complet. J'ai pu demander de l'aide aux développeurs et à mon maitre de stage.</li>
+                                    <li>Utilisation d'une base de données préalablement conçue</li>
+                                </ul>
+                            </div>
+                            <div class="modal-tech-footer">
+                                <span>Symfony 7</span><span>PHP 8</span><span>MySQL</span><span>Git/GitHub</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================================================
+         MODAL PROJET PERSONNEL
+    ================================================ -->
+
     <div class="modal fade" id="modalPersonnel" tabindex="-1">
-        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title"><i class="fas fa-bicycle"></i> Projet personnel - Refonte site club de vélo</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content modal-projet-content">
+                <div class="modal-header modal-header-perso">
+                    <div class="modal-header-icon"><i class="fas fa-bicycle"></i></div>
+                    <div>
+                        <span class="modal-tag modal-tag-perso">Projet personnel · 2025–2026</span>
+                        <h5 class="modal-title">Refonte site — Vélo Club Montaigu</h5>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h6><i class="fas fa-calendar"></i> Contexte</h6>
-                            <p>Refonte complète du site obsolète d'un club cycliste local pour lui donner une présence en ligne moderne.</p>
-                            <h6><i class="fas fa-bullseye"></i> Objectif</h6>
-                            <p>Architecture MVC maison, séparation logique/vue/données, présentation des actualités et événements du club.</p>
-                            <h6><i class="fas fa-microchip"></i> Technologies</h6>
-                            <div class="tech-tags"><span>PHP MVC</span><span>CSS</span><span>JavaScript</span><span>Figma</span><span>Git/GitHub</span></div>
+                <div class="modal-body modal-projet-body">
+                    <div class="row g-4">
+                        <div class="col-lg-7">
+                            <div class="modal-screenshots">
+                                <div class="screenshot-placeholder">
+                                    <i class="fas fa-image"></i>
+                                    <p>Capture 1 — Maquette Figma</p>
+                                    <span>Remplacer par votre image</span>
+                                </div>
+                                <div class="screenshot-placeholder">
+                                    <i class="fas fa-image"></i>
+                                    <p>Capture 2 — Site final</p>
+                                    <span>Remplacer par votre image</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-6">
-                            <h6><i class="fas fa-graduation-cap"></i> Compétences développées</h6>
-                            <ul><li>Architecture logicielle</li><li>Travail en totale autonomie</li><li>Gestion de projet personnel</li><li>UI/UX Design avec Figma</li></ul>
-                            <h6><i class="fas fa-exclamation-triangle"></i> Difficultés & solutions</h6>
-                            <p>La gestion du temps et la priorisation des fonctionnalités. J'ai utilisé Trello pour organiser mes tâches et j'ai livré par itérations successives.</p>
+                        <div class="col-lg-5">
+                            <div class="modal-info-section">
+                                <h6><i class="fas fa-info-circle"></i> Contexte</h6>
+                                <p>Le site existant du Vélo Club Montaigu était obsolète techniquement et visuellement. Connaissant bien le club depuis petite, c'est naturellement que le bureau de l'association m'a proposé le projet de la refonte complète du site.</p>
+                            </div>
+                            <div class="modal-info-section">
+                                <h6><i class="fas fa-bullseye"></i> Objectif</h6>
+                                <p>Concevoir et développer un nouveau site moderne et pratique de A à Z en autonomie, avec la présentation du club, de son histoire, de ses sections et de son bureau.</p>
+                            </div>
+                            <div class="modal-info-section">
+                                <h6><i class="fas fa-graduation-cap"></i> Compétences développées</h6>
+                                <ul class="modal-skill-list">
+                                    <li>Architecture PHP MVC</li>
+                                    <li>Gestion d'un projet avec client réel</li>
+                                    <li>Maquettage UI avec Figma</li>
+                                    <li>Versioning Git en autonomie</li>
+                                </ul>
+                            </div>
+                            <div class="modal-info-section">
+                                <h6><i class="fas fa-exclamation-triangle"></i> Difficulté rencontrée</h6>
+                                <ul>
+                                    <li>Répondre aux demandes variées du bureau de l'association. Résolu avec des échanges réguliers avec celui-ci.</li>
+                                    <li>Concilier le projet avec mes contraintes techniques et mes temps de cours.</li>
+                                </ul>
+                            </div>
+                            <div class="modal-tech-footer">
+                                <span>PHP MVC</span><span>CSS3</span><span>JavaScript</span><span>Figma</span><span>Git/GitHub</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Modal CV -->
+    <!-- ================================================
+         MODAL CV
+    ================================================ -->
     <div class="modal fade" id="cvModal" tabindex="-1">
         <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
@@ -744,9 +1043,7 @@
         </div>
     </div>
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Custom JS -->
     <script src="script.js"></script>
 </body>
 </html>
