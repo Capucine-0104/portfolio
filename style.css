@@ -149,6 +149,12 @@ section { padding: 80px 0; }
 .skill-card ul { list-style: none; text-align: left; }
 .skill-card ul li { padding: 0.5rem 0; position: relative; padding-left: 1.5rem; }
 .skill-card ul li::before { content: '▹'; position: absolute; left: 0; color: var(--primary); }
+.skill-note {
+    font-size: 0.78rem;
+    color: var(--text-light);
+    font-style: italic;
+    font-weight: 400;
+}
 
 /* ============================================
    PROJETS — BLOCS SÉPARÉS
@@ -455,6 +461,70 @@ section { padding: 80px 0; }
 .veille-sources ul li::before { content: '' !important; }
 .veille-sources a { color: var(--primary); text-decoration: none; font-weight: 500; }
 .veille-sources a:hover { text-decoration: underline; }
+
+/* Bouton téléchargement doc veille */
+.veille-doc-btn { margin-top: 1.5rem; text-align: center; }
+.btn-veille-doc {
+    display: inline-flex; align-items: center; gap: 0.6rem;
+    background: var(--primary); color: var(--white);
+    padding: 10px 24px; border-radius: 50px; text-decoration: none;
+    font-size: 0.9rem; font-weight: 600; transition: var(--transition);
+}
+.btn-veille-doc:hover { background: var(--primary-dark); color: var(--white); transform: translateY(-2px); box-shadow: 0 8px 20px rgba(90,37,235,0.3); }
+.btn-veille-doc i { font-size: 1rem; }
+
+/* Tags méthode */
+.veille-methode-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.8rem; }
+.veille-methode-tags span {
+    font-size: 0.75rem; font-weight: 600; color: var(--primary);
+    background: rgba(90,37,235,0.08); border: 1px solid rgba(90,37,235,0.2);
+    padding: 2px 10px; border-radius: 20px;
+}
+
+/* Chiffres clés */
+.veille-stat-card {
+    background: var(--white); border-radius: 16px; padding: 1.5rem 1rem;
+    text-align: center; box-shadow: 0 4px 15px -3px rgba(0,0,0,0.08);
+    border-top: 3px solid var(--primary); transition: var(--transition);
+    height: 100%;
+}
+.veille-stat-card:hover { transform: translateY(-5px); box-shadow: var(--shadow); }
+.veille-stat-number {
+    font-size: 2.8rem; font-weight: 800; color: var(--primary);
+    line-height: 1; margin-bottom: 0.5rem;
+}
+.veille-stat-card p { font-size: 0.85rem; color: var(--text); margin-bottom: 0.5rem; line-height: 1.4; }
+.veille-stat-source { font-size: 0.75rem; color: var(--text-light); font-style: italic; }
+
+/* Analyse perso dans les cartes */
+.veille-analyse {
+    background: rgba(90,37,235,0.05); border-left: 3px solid var(--primary);
+    padding: 0.6rem 0.8rem; border-radius: 0 8px 8px 0;
+    font-size: 0.88rem; margin: 0.8rem 0; color: var(--text);
+}
+.veille-analyse i { color: var(--primary); margin-right: 0.3rem; }
+
+/* Tags dans les cartes sous-thèmes */
+.veille-card-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 1rem; }
+.veille-card-tags span {
+    font-size: 0.75rem; font-weight: 600; color: var(--primary);
+    background: rgba(90,37,235,0.07); border: 1px solid rgba(90,37,235,0.18);
+    padding: 3px 10px; border-radius: 20px;
+}
+
+/* Carte focus (vibe coding) */
+.veille-card-focus {
+    border: 2px solid var(--primary) !important;
+    background: linear-gradient(135deg, #fff 0%, #f5f0ff 100%) !important;
+}
+.veille-focus-badge {
+    display: inline-flex; align-items: center; gap: 0.4rem;
+    font-size: 0.72rem; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.5px; color: var(--primary);
+    background: rgba(90,37,235,0.1); padding: 3px 12px;
+    border-radius: 20px; margin-bottom: 0.8rem;
+}
+.veille-number-focus { background: var(--primary) !important; box-shadow: 0 4px 12px rgba(90,37,235,0.4); }
 
 /* ============================================
    CONTACT
