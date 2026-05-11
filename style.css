@@ -293,23 +293,156 @@ section { padding: 80px 0; }
     gap: 1rem;
     margin-bottom: 1.2rem;
 }
+/* Image seule → pleine largeur */
+.modal-screenshots .screenshot-placeholder:only-child {
+    grid-column: 1 / -1;
+    min-height: 260px;
+}
 .screenshot-placeholder {
     background: var(--bg-light);
-    border: 2px dashed #d1d5db;
+    border: 2px solid #e5e7eb;
     border-radius: 12px;
     min-height: 160px;
     display: flex; flex-direction: column;
     align-items: center; justify-content: center;
-    gap: 0.5rem; text-align: center; padding: 1rem;
-    color: var(--text-light); cursor: pointer;
+    gap: 0.5rem; text-align: center; padding: 0.6rem;
+    color: var(--text-light); cursor: zoom-in;
+    transition: var(--transition);
+    overflow: hidden;
+    position: relative;
+}
+.screenshot-placeholder::after {
+    content: '\f00e';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: absolute;
+    top: 8px; right: 10px;
+    font-size: 0.85rem;
+    color: var(--white);
+    background: rgba(0,0,0,0.45);
+    padding: 4px 7px;
+    border-radius: 6px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    pointer-events: none;
+}
+.screenshot-placeholder:hover { border-color: var(--primary); box-shadow: 0 4px 16px rgba(90,37,235,0.12); }
+.screenshot-placeholder:hover::after { opacity: 1; }
+.screenshot-placeholder p { font-size: 0.82rem; font-weight: 600; color: var(--text); margin: 0 0 0.3rem; z-index:1; }
+.screenshot-placeholder span { font-size: 0.75rem; opacity: 0.6; }
+.screenshot-placeholder img { width: 100%; height: 100%; object-fit: cover; border-radius: 8px; display: block; }
+
+/* ============================================
+   LIGHTBOX
+   ============================================ */
+.lightbox-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+    cursor: zoom-out;
+}
+.lightbox-overlay.active { display: flex; animation: fadeInFast 0.2s ease; }
+.lightbox-inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    max-width: 92vw;
+    max-height: 92vh;
+    cursor: default;
+}
+.lightbox-img-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    max-height: 90vh;
+}
+#lightbox-img {
+    max-width: 85vw;
+    max-height: 82vh;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 30px 80px rgba(0,0,0,0.6);
+}
+#lightbox-caption {
+    color: rgba(255,255,255,0.75);
+    font-size: 0.9rem;
+    margin: 0;
+    font-weight: 500;
+}
+.lightbox-close {
+    position: fixed;
+    top: 1.2rem; right: 1.5rem;
+    background: rgba(255,255,255,0.12);
+    border: none; color: var(--white);
+    width: 42px; height: 42px; border-radius: 50%;
+    font-size: 1.1rem; cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    transition: background 0.2s;
+}
+.lightbox-close:hover { background: rgba(255,255,255,0.25); }
+.lightbox-prev, .lightbox-next {
+    background: rgba(255,255,255,0.12);
+    border: none; color: var(--white);
+    width: 46px; height: 46px; border-radius: 50%;
+    font-size: 1rem; cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0; transition: background 0.2s;
+}
+.lightbox-prev:hover, .lightbox-next:hover { background: rgba(255,255,255,0.28); }
+@keyframes fadeInFast {
+    from { opacity: 0; } to { opacity: 1; }
+}
+
+/* ============================================
+   STAGE 1 — PDF PREVIEW BLOCK
+   ============================================ */
+.stage1-pdf-preview {
+    background: linear-gradient(135deg, #f0f4ff 0%, #e8f0ff 100%);
+    border: 2px solid rgba(8,145,178,0.25);
+    border-radius: 16px;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.stage1-pdf-icon {
+    width: 70px; height: 70px;
+    background: linear-gradient(135deg, var(--color-stage), var(--color-stage-dark));
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 2rem; color: var(--white);
+    box-shadow: 0 8px 20px rgba(8,145,178,0.3);
+}
+.stage1-pdf-preview h5 {
+    font-size: 1.1rem; font-weight: 700; color: var(--secondary); margin: 0;
+}
+.stage1-pdf-preview p {
+    font-size: 0.9rem; color: var(--text-light); max-width: 320px; margin: 0;
+}
+.btn-open-pdf {
+    display: inline-flex; align-items: center; gap: 0.6rem;
+    background: var(--color-stage); color: var(--white);
+    border: none; padding: 11px 26px; border-radius: 50px;
+    font-size: 0.92rem; font-weight: 600; cursor: pointer;
     transition: var(--transition);
 }
-.screenshot-placeholder:hover { border-color: var(--primary); background: rgba(90,37,235,0.03); }
-.screenshot-placeholder i { font-size: 2rem; opacity: 0.4; }
-.screenshot-placeholder p { font-size: 0.85rem; font-weight: 600; color: var(--text); margin: 0; }
-.screenshot-placeholder span { font-size: 0.75rem; opacity: 0.6; }
-/* Pour remplacer le placeholder par une vraie image : */
-.screenshot-placeholder img { width: 100%; height: 100%; object-fit: cover; border-radius: 10px; }
+.btn-open-pdf:hover { background: var(--color-stage-dark); transform: translateY(-2px); box-shadow: 0 8px 20px rgba(8,145,178,0.3); }
+.btn-dl-pdf {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    background: transparent; color: var(--color-stage);
+    border: 1.5px solid var(--color-stage); padding: 9px 20px; border-radius: 50px;
+    font-size: 0.88rem; font-weight: 600; text-decoration: none;
+    transition: var(--transition);
+}
+.btn-dl-pdf:hover { background: var(--color-stage); color: var(--white); }
 
 .modal-lien-block {
     background: rgba(90,37,235,0.06); border-radius: 10px;

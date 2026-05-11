@@ -99,3 +99,52 @@ window.addEventListener('scroll', function() {
         }
     }
 });
+// ============================================
+// LIGHTBOX — AGRANDISSEMENT PHOTOS
+// ============================================
+let lightboxImages = [];
+let lightboxIndex = 0;
+
+function openLightbox(el) {
+    const img = el.querySelector('img');
+    if (!img) return;
+
+    // Collect all images from the same modal-screenshots container
+    const container = el.closest('.modal-screenshots') || el.closest('.modal-body');
+    const allPlaceholders = container ? container.querySelectorAll('.screenshot-placeholder img') : [img];
+
+    lightboxImages = Array.from(allPlaceholders);
+    lightboxIndex = lightboxImages.indexOf(img);
+
+    showLightboxImage(lightboxIndex);
+    document.getElementById('lightbox').classList.add('active');
+    document.addEventListener('keydown', lightboxKeyHandler);
+}
+
+function showLightboxImage(index) {
+    const img = lightboxImages[index];
+    if (!img) return;
+    document.getElementById('lightbox-img').src = img.src;
+    document.getElementById('lightbox-img').alt = img.alt;
+    const caption = img.closest('.screenshot-placeholder')?.querySelector('p')?.textContent || img.alt;
+    document.getElementById('lightbox-caption').textContent = caption;
+    // Show/hide nav arrows
+    document.querySelector('.lightbox-prev').style.visibility = lightboxImages.length > 1 ? 'visible' : 'hidden';
+    document.querySelector('.lightbox-next').style.visibility = lightboxImages.length > 1 ? 'visible' : 'hidden';
+}
+
+function lightboxNav(dir) {
+    lightboxIndex = (lightboxIndex + dir + lightboxImages.length) % lightboxImages.length;
+    showLightboxImage(lightboxIndex);
+}
+
+function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('active');
+    document.removeEventListener('keydown', lightboxKeyHandler);
+}
+
+function lightboxKeyHandler(e) {
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowRight') lightboxNav(1);
+    if (e.key === 'ArrowLeft') lightboxNav(-1);
+}
