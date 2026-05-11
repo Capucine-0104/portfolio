@@ -37,7 +37,7 @@
         <div class="container">
             <div class="hero-content">
                 <h1 class="animate-title">Capucine Piquart</h1>
-                <h2 class="animate-subtitle">Étudiante BTS SIO Option SLAM</h2>
+                <h2 class="animate-subtitle">Étudiante BTS SIO - Option SLAM</h2>
                 <p class="animate-text">Passionnée par le développement informatique (web ou applicatif), je créée des solutions logicielles innovantes au service des clients.</p>
                 <div class="hero-buttons">
                     <a href="#contact" class="btn btn-outline-primary ms-3">Me contacter</a>
@@ -141,7 +141,7 @@
                             <div class="project-icon"><i class="fas fa-network-wired"></i></div>
                             <h3>AP1 — Système d'information</h3>
                             <p class="project-tech">Cisco Packet Tracer</p>
-                            <p class="project-short">Infrastructure réseau simulée pour une entreprise.</p>
+                            <p class="project-short">Infrastructure réseau simulée pour un collège avec différents pôles.</p>
                             <button class="btn-project" data-bs-toggle="modal" data-bs-target="#modalAP1SISR">
                                 En savoir plus <i class="fas fa-arrow-right"></i>
                             </button>
@@ -152,7 +152,7 @@
                             <div class="project-icon"><i class="fa-solid fa-trowel"></i></div>
                             <h3>AP1 — Service à la personne</h3>
                             <p class="project-tech">PHP / MySQL</p>
-                            <p class="project-short">Mise en relation de services à domicile.</p>
+                            <p class="project-short">Application de demande pour une prestation de service à domicile.</p>
                             <button class="btn-project" data-bs-toggle="modal" data-bs-target="#modalAP1SLAM">
                                 En savoir plus <i class="fas fa-arrow-right"></i>
                             </button>
@@ -163,7 +163,7 @@
                             <div class="project-icon"><i class="fas fa-horse"></i></div>
                             <h3>AP2 — Course Hippique</h3>
                             <p class="project-tech">PHP / MySQL / JS</p>
-                            <p class="project-short">Application de gestion complète avec CRUD.</p>
+                            <p class="project-short">Application de gestion complète de course hippique.</p>
                             <button class="btn-project" data-bs-toggle="modal" data-bs-target="#modalAP2">
                                 En savoir plus <i class="fas fa-arrow-right"></i>
                             </button>
@@ -173,8 +173,8 @@
                         <div class="project-card-compact">
                             <div class="project-icon"><i class="fas fa-plane"></i></div>
                             <h3>AP3 — MUDRY Aviation</h3>
-                            <p class="project-tech">Symfony / Doctrine</p>
-                            <p class="project-short">Application métier aéronautique.</p>
+                            <p class="project-tech">PHP MVC / MySQL</p>
+                            <p class="project-short">Application métier de gestion aéronautique avec des CRUD.</p>
                             <button class="btn-project" data-bs-toggle="modal" data-bs-target="#modalAP3">
                                 En savoir plus <i class="fas fa-arrow-right"></i>
                             </button>
@@ -184,8 +184,8 @@
                         <div class="project-card-compact">
                             <div class="project-icon"><i class="fas fa-briefcase"></i></div>
                             <h3>AP4 — Trouve Ton Job</h3>
-                            <p class="project-tech">Symfony / API REST</p>
-                            <p class="project-short">Plateforme de recrutement candidats / recruteurs.</p>
+                            <p class="project-tech">Symfony / API REST / Android / MySQL </p>
+                            <p class="project-short">Plateforme et application de recrutement candidats / recruteurs.</p>
                             <button class="btn-project" data-bs-toggle="modal" data-bs-target="#modalAP4">
                                 En savoir plus <i class="fas fa-arrow-right"></i>
                             </button>
@@ -573,16 +573,14 @@
                             <!-- Zone captures d'écran -->
                             <div class="modal-screenshots">
                                 <div class="screenshot-placeholder">
-                                    <i class="fas fa-image"></i>
                                     <p>Maquette virtuelle réseau</p>
-                                    <img src="images/ap1/maquette_packet_tracer.png" alt="Maquette virtuelle">
+                                    <img src="images/ap1sisr/maquette_packet_tracer.png" alt="Maquette virtuelle">
                                 </div>
                             </div>
                             <div class="modal-screenshots">
                                 <div class="screenshot-placeholder">
-                                    <i class="fas fa-image"></i>
                                     <p>Table de routage </p>
-                                    <img src="images/ap1/table_routage.png" alt="Table de routage">
+                                    <img src="images/ap1sisr/table_routage.png" alt="Table de routage">
                                 </div>
                             </div>
                         </div>
@@ -642,14 +640,16 @@
                         <div class="col-lg-7">
                             <div class="modal-screenshots">
                                 <div class="screenshot-placeholder">
-                                    <i class="fas fa-image"></i>
-                                    <p>Capture 1 — Page d'accueil</p>
-                                    <span>Remplacer par votre image</span>
+                                    <p>Page d'accueil</p>
+                                    <img src="images/ap1slam/accueil.png" alt="Accueil du site">
                                 </div>
                                 <div class="screenshot-placeholder">
-                                    <i class="fas fa-image"></i>
-                                    <p>Capture 2 — Interface de gestion</p>
-                                    <span>Remplacer par votre image</span>
+                                    <p>Formulaire de demande de prestation</p>
+                                    <img src="images/ap1slam/debut_form_presta.png" alt="Formulaire">
+                                </div>
+                                <div class="screenshot-placeholder">
+                                    <p>Securisation du formulaire</p>
+                                    <img src="images/ap1slam/securisation_form.png" alt="Sécurisation du formulaire">
                                 </div>
                             </div>
                         </div>
@@ -661,27 +661,27 @@
                             </div>
                             <div class="modal-info-section">
                                 <h6><i class="fas fa-bullseye"></i> Missions & Objectifs</h6>
-                                <p>Créer un site web dynamique gérant le service des petits travaux de jardinage à domicile. 
-                                    Nous devrons définir une base de données pour conserver les demandes de service et les paramètres. 
-                                    Nous utilisons les langages PHP, HTML et CSS et éventuellement Javascript. 
-                                    Nous utiliserons Bootstrap pour gérer votre CSS. 
-                                    Le site doit être responsive.</p>
+                                <p>Création d'un site web dynamique gérant le service des petits travaux de jardinage à domicile. 
+                                    Nous avons défini une base de données pour conserver les demandes de service et les paramètres. 
+                                    Nous avons utilisé les langages PHP, HTML, CSS et Javascript. 
+                                    Nous avons utilisé Bootstrap pour gérer le CSS. 
+                                    Le site est responsive.</p>
                             </div>
                             <div class="modal-info-section">
                                 <h6><i class="fas fa-graduation-cap"></i> Compétences développées</h6>
                                 <ul class="modal-skill-list">
-                                    <li>Maîtrise du CRUD complet</li>
+                                    <li>Création complete d'un formulaire de demande de prestation</li>
+                                    <li>Sécurisation des formulaires (regex)</li>
                                     <li>Modélisation de base de données</li>
                                     <li>Gestion des sessions utilisateurs</li>
-                                    <li>Sécurisation des formulaires</li>
                                 </ul>
                             </div>
                             <div class="modal-info-section">
                                 <h6><i class="fas fa-exclamation-triangle"></i> Difficulté rencontrée</h6>
-                                <p>La gestion des disponibilités des intervenants. Résolu avec une table de planning et vérification des conflits horaires côté serveur.</p>
+                                <p>Bien relié la base de données avec le site. Résolu avec l'aide d'un TP de notre professeur.</p>
                             </div>
                             <div class="modal-tech-footer">
-                                <span>PHP</span><span>MySQL</span><span>HTML/CSS</span><span>Bootstrap</span>
+                                <span>PHP</span><span>HTML/CSS</span><span>Bootstrap</span><span>MySQL</span>
                             </div>
                         </div>
                     </div>
@@ -697,7 +697,7 @@
                 <div class="modal-header modal-header-ap">
                     <div class="modal-header-icon"><i class="fas fa-horse"></i></div>
                     <div>
-                        <span class="modal-tag modal-tag-ap">AP · SLAM · 2024</span>
+                        <span class="modal-tag modal-tag-ap">AP · SLAM · 2025</span>
                         <h5 class="modal-title">AP2 — Application Course Hippique</h5>
                     </div>
                     <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal"></button>
@@ -707,14 +707,20 @@
                         <div class="col-lg-7">
                             <div class="modal-screenshots">
                                 <div class="screenshot-placeholder">
-                                    <i class="fas fa-image"></i>
-                                    <p>Capture 1 — Gestion des chevaux</p>
-                                    <span>Remplacer par votre image</span>
+                                    <p>Diagramme de cas d'utilisation</p>
+                                    <img src="images/ap2/dia_cas_utilisation.png" alt="Diagramme de cas d'utilisation">
                                 </div>
                                 <div class="screenshot-placeholder">
-                                    <i class="fas fa-image"></i>
-                                    <p>Capture 2 — Tableau des courses</p>
-                                    <span>Remplacer par votre image</span>
+                                    <p>MCD de la base de données</p>
+                                    <img src="images/ap2/mcd.png" alt="MCD de la base de données">
+                                </div>
+                                <div class="screenshot-placeholder">
+                                    <p>Accueil public</p>
+                                    <img src="images/ap2/accueil.png" alt="Accueil du site">
+                                </div>
+                                <div class="screenshot-placeholder">
+                                    <p>Trello d'organisation des tâches</p>
+                                    <img src="images/ap2/trello.png" alt="Trello d'organisation">
                                 </div>
                             </div>
                         </div>
@@ -724,24 +730,30 @@
                                 <p>Projet académique pour une société organisatrice de courses hippiques nécessitant un outil de gestion centralisé et moderne.</p>
                             </div>
                             <div class="modal-info-section">
-                                <h6><i class="fas fa-bullseye"></i> Objectif</h6>
-                                <p>Développer une application CRUD complète pour gérer les chevaux, les courses, les jockeys et les parieurs avec leurs mises.</p>
+                                <h6><i class="fas fa-bullseye"></i> Missions & Objectif</h6>
+                                <p>La société TELLIS nous confie la réalisation d'un site web dédié à la gestion des courses hippiques. 
+                                    Le site devra permettre aux propriétaires de chevaux d'inscrire leurs chevaux et de choisir des jockeys, 
+                                    tandis que les gestionnaires pourront organiser les courses (dates, horaires) et saisir les résultats. 
+                                    Une authentification distincte sera mise en place pour ces deux types d'utilisateurs. 
+                                    Nous devons utiliser PHP et MySQL, avec une interface responsive. </p>
                             </div>
                             <div class="modal-info-section">
                                 <h6><i class="fas fa-graduation-cap"></i> Compétences développées</h6>
                                 <ul class="modal-skill-list">
-                                    <li>Modélisation de bases de données (Merise)</li>
+                                    <li>Analyser des besoins et spécifications</li>
+                                    <li>Modélisation de bases de données (Merise MCD)</li>
                                     <li>Logique métier complexe</li>
                                     <li>Sécurisation des accès</li>
                                     <li>Gestion des transactions SQL</li>
+                                    <li>Oraginsation du travail en équipe (5 personnes)</li>
                                 </ul>
                             </div>
                             <div class="modal-info-section">
                                 <h6><i class="fas fa-exclamation-triangle"></i> Difficulté rencontrée</h6>
-                                <p>Gestion des mises à jour concurrentes sur les cotes. Résolu par l'implémentation d'un verrouillage optimiste côté base de données.</p>
+                                <p>Travail en équipe sur un projet complexe avec des contraintes de temps et de fonctionnalités à respecter. Résolu grâce à des points en début de session</p>
                             </div>
                             <div class="modal-tech-footer">
-                                <span>PHP</span><span>MySQL</span><span>JavaScript</span><span>Bootstrap</span>
+                                <span>PHP</span><span>MySQL</span><span>PhpMyAdmin</span><span>HTML/CSS/JS</span><span>Bootstrap</span><span>Figma</span><span>Trello</span>
                             </div>
                         </div>
                     </div>
@@ -767,41 +779,74 @@
                         <div class="col-lg-7">
                             <div class="modal-screenshots">
                                 <div class="screenshot-placeholder">
-                                    <i class="fas fa-image"></i>
-                                    <p>Capture 1 — Gestion des employés</p>
-                                    <span>Remplacer par votre image</span>
+                                    <p>Diagramme de cas d'utilisation</p>
+                                    <img src="images/ap3/dia_cas_utilisation.png" alt="Diagramme de cas d'utilisation">
                                 </div>
                                 <div class="screenshot-placeholder">
-                                    <i class="fas fa-image"></i>
-                                    <p>Capture 2 — Planning des vols</p>
-                                    <span>Remplacer par votre image</span>
+                                    <p>MCD de la base de données</p>
+                                    <img src="images/ap3/mcd.png" alt="MCD">
                                 </div>
+                                <div class="screenshot-placeholder">
+                                    <p>Trello d'organisation des tâches</p>
+                                    <img src="images/ap3/trello.png" alt="Trello d'organisation">
+                                </div>
+                                <div class="screenshot-placeholder">
+                                    <p>Liste des employés</p>
+                                    <img src="images/ap3/liste_employe.png" alt="Liste des employés">
+                                </div>
+                                <div class="screenshot-placeholder">
+                                    <p>Ajouter un employé dans la base de données</p>
+                                    <img src="images/ap3/ajout_employe.png" alt="Ajout d'un employé">
+                                </div>
+                                <div class="screenshot-placeholder">
+                                    <p>Modifier les informations d'un employé</p>
+                                    <img src="images/ap3/modif_employe.png" alt="Modification d'un employé">
+                                </div>
+                            </div>
+                            <div class="modal-lien-block">
+                                <i class="fas fa-external-link-alt"></i>
+                                <a href="https://gr01.sio-cholet.fr/" target="_blank">Visiter le site : https://gr01.sio-cholet.fr/ (mdp : BMW1234*)</a>
                             </div>
                         </div>
                         <div class="col-lg-5">
                             <div class="modal-info-section">
                                 <h6><i class="fas fa-info-circle"></i> Contexte</h6>
-                                <p>Application métier pour une entreprise de services aéronautiques nécessitant une gestion rigoureuse du personnel navigant et des vols.</p>
+                                <p>
+                                    Avionix est une entreprise de services du numérique (ESN) spécialisée dans l'avionique, créée en 1992 et située dans le sud francilien. 
+                                    Créée en 1992, sa principale activité est le développement de progiciels, en particulier dans le domaine de l’aviation. 
+                                    Son personnel est composé de spécialistes de l'aviation et de techniciens informatiques. 
+                                    Avionix a réussi à faire sa place dans son créneau principalement grâce à un client fidèle : 
+                                    la compagnie aérienne Mudry Aviation, pour laquelle elle a conçu des applications ciblées (planification des vols, gestion de flotte, ...).
+
+                                </p>
                             </div>
                             <div class="modal-info-section">
-                                <h6><i class="fas fa-bullseye"></i> Objectif</h6>
-                                <p>Implémenter un CRUD complet avec Symfony pour gérer les employés, les avions et les vols, avec gestion des relations Many-to-Many.</p>
+                                <h6><i class="fas fa-bullseye"></i> Missions & Objectif</h6>
+                                <p>Dans le cas de la refonte du SI de Mudry Aviation, on nous a confié la mission de concevoir la base de données pour la nouvelle application. 
+                                    On souhaite une application en ligne, sécurisée et responsive. Nous devons utiliser le langages PHP-MySQL, avec une architecture MVC.
+                                    De plus, nous devons mettre en place un outils de versioning afin de sychrniser nos travaux (Git et GitHub). 
+                                    Lors de notre développement nous devrons respecté des normes de développement. </p>
                             </div>
                             <div class="modal-info-section">
                                 <h6><i class="fas fa-graduation-cap"></i> Compétences développées</h6>
                                 <ul class="modal-skill-list">
-                                    <li>Architecture MVC avec Symfony</li>
-                                    <li>Relations Doctrine (OneToMany, ManyToMany)</li>
-                                    <li>Formulaires Symfony avec validation</li>
+                                    <li>Analyse des besoins</li>
+                                    <li>Conception de la base de données MySQL</li>
+                                    <li>Architecture MVC en PHP</li>
+                                    <li>Mise en place de CRUD de gestion</li>
                                     <li>Système d'authentification</li>
+                                    <li>Versioning avec Git et GitHub</li>
                                 </ul>
                             </div>
                             <div class="modal-info-section">
                                 <h6><i class="fas fa-exclamation-triangle"></i> Difficulté rencontrée</h6>
-                                <p>Complexité des relations entre entités (employé ↔ vols). Résolu par une modélisation UML approfondie avant de coder les entités Doctrine.</p>
+                                <ul>
+                                    <li>Complexité des relations entre entités (beaucoup de contraintes). Résolu grâce à l'aide d'une professeure et d'une analyse plus poussée.</li>
+                                    <li>Mise en commun des travaux et deploiement sur le serveur de production. Résolu grâce à l'utilisation de Git et GitHub et à l'aide d'un tuto étape par étape (TP).</li>
+                                </ul>
                             </div>
                             <div class="modal-tech-footer">
-                                <span>Symfony</span><span>Doctrine ORM</span><span>Bootstrap</span><span>Git/GitHub</span>
+                                <span>HTML/CSS/JS</span><span>PHP MVC</span><span>MySQL</span><span>PhpMyAdmin</span><span>Bootstrap</span><span>Trello</span><span>Figma</span><span>Git/GitHub</span>
                             </div>
                         </div>
                     </div>
