@@ -488,6 +488,40 @@ section { padding: 80px 0; }
     font-size: 0.8rem; color: var(--primary); font-weight: 600;
 }
 
+/* ---- Couleurs STAGE (bleu) dans les modals ---- */
+#modalStage1 .modal-info-section h6,
+#modalStage2 .modal-info-section h6 { color: var(--color-stage); }
+
+#modalStage1 .modal-skill-list li::before,
+#modalStage2 .modal-skill-list li::before { color: var(--color-stage); }
+
+#modalStage1 .modal-tech-footer span,
+#modalStage2 .modal-tech-footer span {
+    color: var(--color-stage);
+    border-color: rgba(8,145,178,0.25);
+    background: rgba(8,145,178,0.06);
+}
+#modalStage1 .modal-lien-block,
+#modalStage2 .modal-lien-block { background: rgba(8,145,178,0.07); }
+#modalStage1 .modal-lien-block i,
+#modalStage2 .modal-lien-block i { color: var(--color-stage); }
+#modalStage1 .modal-lien-block a,
+#modalStage2 .modal-lien-block a { color: var(--color-stage); }
+#modalStage1 .modal-entreprise-block i,
+#modalStage2 .modal-entreprise-block i { color: var(--color-stage); }
+
+/* ---- Couleurs PERSO (orange) dans les modals ---- */
+#modalPersonnel .modal-info-section h6 { color: var(--color-perso); }
+#modalPersonnel .modal-skill-list li::before { color: var(--color-perso); }
+#modalPersonnel .modal-tech-footer span {
+    color: var(--color-perso);
+    border-color: rgba(217,119,6,0.25);
+    background: rgba(217,119,6,0.06);
+}
+#modalPersonnel .modal-lien-block { background: rgba(217,119,6,0.07); }
+#modalPersonnel .modal-lien-block i { color: var(--color-perso); }
+#modalPersonnel .modal-lien-block a { color: var(--color-perso); }
+
 /* ============================================
    EXPÉRIENCES
    ============================================ */
